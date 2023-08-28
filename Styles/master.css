@@ -30,7 +30,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     left: calc(50% -50px);
 
 }
-.login-box h1{
+.login-box h1,p{
     margin: 0;
     padding: 0 0 20px;
     text-align: center;
@@ -49,6 +49,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     margin-bottom: 20px;
 }
 .login-box input[type="text"],
+.login-box input[type="email"],
 .login-box input[type="password"]{
     border: none;
     border-bottom: 1px solid #fff;

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panaderia Bañico's</title>
     <link rel="shortcut icon" href="./img/favicon-banico.png" type="image/x-icon">
+    <!--Boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!--fond awesone-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css">
     <!--fond oswald-->
@@ -16,266 +18,366 @@
     <link rel="stylesheet" href="./Styles/styles.css">
 </head>
 <body>
-
-    <div class="menu-btn">
-        <i class="fas fa-bars fa-2x"></i>
-    </div>
-    <div class="container">
-
-        <nav class="nav-main">
-            <img src="./img/favicon-pana.png" alt="Udacity logo" class="nav-brand">
-            <ul class="nav-menu">
-                <li>
-                    <a href="./index.html">INICIO</a> 
-                </li>
-                <li>
-                    <a href="./plantillas/nosotros.html">ACERCA DE NOSOSTROS</a>
-                </li>
-                <li>
-                    <a href="./plantillas/producto.html">PRODUCTOS</a>
-                </li>
-                <li>
-                    <a href="./plantillas/pedido.html">PEDIDOS ONLINE</a>
-                </li>
-                <li>
-                    <a href="./plantillas/contacto.html">CONTACTANOS</a>
-                </li>
-                
-
-            </ul>
-            <div class="login">
-                <a href="./plantillas/login.html" class="boton" >  Iniciar Sesion</a>
-                
-            </div>
-            
-            
-            <!--Navegacion derecha-->
-            <ul class="nav-menu-right">
-                <li>
-                    <a href="#">
-                        <i class="fas fa-search"></i>
-                    </a>
-                </li> 
-            </ul>
-
-        </nav>
-        <hr>
-
-        <!--SHOWCASE-->
-        <header class="showcase">
-            <h2>BISCOCHUELOS</h2>
-            <p>Son los pequeños placeres de la vida</p>
-            <a href="./plantillas/nosotros.html" class="btn">Leer Mas <i class="fas fa-angle-double-right"></i></a>
-        </header>
-        <div class="fresco">
-            <h1>En Panaderia Bañico's Todo es fresco</h1>
+    <header>
+        <div class="menu-btn">
+            <i class="fas fa-bars fa-2x"></i>
         </div>
-        <!--Tarjeta de productos-->
-        <div class="news-cards">
-            
-            <div>
-                <img src="./img/bisco_huamanguino.png" alt="biscochuelo huamanguino">
-                <h3>Biscochuelo Huamanguino.</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro animi sint odio consectetur magni maxime id tenetur assumenda praesentium temporibus.</p>
-                <a href="./plantillas/detalle_producto.html" class="btn">Ver producto <i class="fas fa-angle-double-right"></i></a>
+        <div class="container">
+    
+            <nav class="nav-main">
+                <img src="./img/favicon-pana.png" alt="Udacity logo" class="nav-brand">
+                <ul class="nav-menu">
+                    <li>
+                        <a class="emcabezado" href="./index.html"><i class="fa-solid fa-house"></i> INICIO</a> 
+                    </li>
+                    <li>
+                        <a a class="emcabezado" href="./plantillas/nosotros.html"><i class="fa-solid fa-user-group"></i> ACERCA DE NOSOSTROS</a>
+                    </li>
+                    <li>
+                        <a a class="emcabezado" href="./plantillas/producto.html"><i class="fa-sharp fa-solid fa-cake-candles"></i> PRODUCTOS</a>
+                    </li>
+                    <li>
+                        <a a class="emcabezado" href="./plantillas/pedido.html"><i class="fa-solid fa-mobile-screen-button"></i> PEDIDOS ONLINE</a>
+                    </li>
+                    <li>
+                        <a a class="emcabezado" href="./plantillas/contacto.html"><i class="fa-solid fa-address-card"></i> CONTACTANOS</a>
+                    </li>    
+                </ul>
+                
+                <!--Navegacion derecha-->
+                <ul class="nav-menu-right">
+                    <li class="buscar">
+                        <a class="buscar1" href="#">
+                            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>   
+                        </a>
+                    </li> 
+                </ul>
+                <div class="horario">
+                    <a  href="#" class="horario1" > <i class="fa-sharp fa-solid fa-clock"></i></a>                    
+                </div>
+                <div class="login">
+                    <a  href="./plantillas/login.html" class="boton" > <i class="fa-solid fa-user"></i></a>                    
+                </div>
+                <div class="carrito">
+                    <a  href="./plantillas/producto.html" class="carrito1" > <i class="fa-solid fa-cart-shopping"></i></a>                    
+                </div>
+    
+            </nav>
+            <hr>
+    </header>
+   
+    <section class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider__section">
+                <img src="/img/torta_chirimoya.jpg" alt="torta de chrimoya" class="slider__img">
             </div>
-            <div>
-                <img src="./img/bisco_tradi.png" alt="biscochuelo tradicional">
-                <h3>Biscochuelo Tradicional.</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro animi sint odio consectetur magni maxime id tenetur assumenda praesentium temporibus.</p>
-                <a href="./plantillas/detalle_producto.html" class="btn">Ver producto <i class="fas fa-angle-double-right"></i></a>
+            <div class="slider__section">
+                <img src="/img/banner_biscochuelo.jpg" alt="biscochuelo humanaguino" class="slider__img">
             </div>
-            <div>
-                <img src="./img/biscochuelo_tipo keke.png" alt="biscochuelo tipo queque">
-                <h3>Biscochuelo tipo queque.</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro animi sint odio consectetur magni maxime id tenetur assumenda praesentium temporibus.</p>
-                <a href="./plantillas/detalle_producto.html" class="btn">Ver producto <i class="fas fa-angle-double-right"></i></a>
+            <div class="slider__section">
+                <img src="/img/torta_chocolate.jpg" alt="torta de chocolate" class="slider__img">
             </div>
-            <div>
-                <img src="./img/pastel de fresa.jpg" alt="pastel de fresa">
-                <h3>Pastel de fresa.</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro animi sint odio consectetur magni maxime id tenetur assumenda praesentium temporibus.</p>
-                <a href="./plantillas/detalle_producto.html" class="btn">Ver producto <i class="fas fa-angle-double-right"></i></a>
+            <div class="slider__section">
+                <img src="/img/torta_vainilla.jpg" alt="" class="slider__img">
+            </div>
+            <div class="slider__section">
+                <img src="/img/rebanada-tiramisu.jpg" alt="" class="slider__img">
             </div>
         </div>
-        <div>
-            <section class="cards-banner-one">
-                <div class="content">
-                    <h2>Nuestros productos</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, sunt qui fugiat repellat laborum repudiandae impedit magni deserunt voluptatibus libero?</p>
-                    <a href="./plantillas/producto.html" class="btn">Ver mas <i class="fas fa-angle-double-right"></i></a>
+        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+    </section>
+    <section class="contenedor">
+           
+            
+            <!--SHOWCASE-->
+<!--           <header class="showcase">
+                <h2>BISCOCHUELOS</h2>
+                <p>Son los pequeños placeres de la vida</p>
+                <a href="./plantillas/nosotros.html" class="btn">Leer Mas <i class="fas fa-angle-double-right"></i></a>
+            </header>
+            --> 
+            <div class="fresco">
+                <h1>- Categorias Principales -</h1>
+            </div>
+            <!--Tarjeta de productos-->
+            <div class="news-cards">  
+                <div class="items">
+                    <img class="img-producto" id="id-biscochuelos" src="./img/bisco_huamanguino.png" alt="biscochuelo huamanguino">
+                    <h3 class="nombre-producto1"><b>BISCOCHUELOS</b></h3>
+                </div>
+                <div class="items">
+                    <img class="img-producto" id="id-merengados" src="./img/bisco_tradi.png" alt="biscochuelo tradicional">
+                    <h3 class="nombre-producto1"><b>MERENGADOS</b></h3>
+                </div>
+                <div class="items">
+                    <img class="img-producto" id="id-tortas" src="./img/biscochuelo_tipo keke.png" alt="biscochuelo tipo queque">
+                    <h3 class="nombre-producto1"><b>TORTAS</b></h3>
+                </div>
+                <div class="items">
+                    <img class="img-producto"id='id-tres-leches' src="./img/pastel de fresa.jpg" alt="pastel de fresa">
+                    <h3 class="nombre-producto1"><b>TRES LECHES</b></h3>
+                </div>
+                <div class="items">
+                    <img class="img-producto" id="id-souffles" src="./img/pastel de fresa.jpg" alt="pastel de fresa">
+                    <h3 class="nombre-producto1"><b>SOUFFLES</b></h3>
+                </div>
+                <div class="items">
+                    <img class="img-producto" id='id-bruselinas' src="./img/pastel de fresa.jpg" alt="pastel de fresa">
+                    <h3 class="nombre-producto1"><b>BRUSELINAS</b></h3>
+                </div>
+            </div>
+            <div class="fresco1">
+                <h1>- Las mas pedidas -</h1>
+                <p>las preferidas por nuestros clientes ecuentralas en sus <br>diferentes sabores y Tamaños</p>
+            </div>
+            <!--las mas pedidas-->
+            <section class="container-slider1">
+                <div class="news-cards2" id="news-cards2">
+                    <div class="items2">
+                        <img class="img-producto2" src="./img/bisco_huamanguino.png" alt="biscochuelo huamanguino">
+                        <h3 class="nombre-producto2">Biscochuelo Huamanguino</h3>
+                        <a href="./plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <span class="precio2"><b>Desde</b> S/ 60.00</span>
+                    </div>
+                    <div class="items2">
+                        <img class="img-producto2" src="./img/queque_naranja.avif" alt="queque de naranja">
+                        <h3 class="nombre-producto2">Queque de naranja</h3>
+                        <a href="./plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <span class="precio2"><b>Desde</b> S/ 60.00</span>
+                    </div>
+                    <div class="items2">
+                        <img class="img-producto2" src="./img/torta_chirimoya.jpg" alt="queque de naranja">
+                        <h3 class="nombre-producto2">Queque de naranja</h3>
+                        <a href="./plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <span class="precio2"><b>Desde</b> S/ 60.00</span>
+                    </div>
+                    <div class="items2">
+                        <img class="img-producto2" src="./img/queque_naranja.avif" alt="queque de naranja">
+                        <h3 class="nombre-producto2">Queque de naranja</h3>
+                        <a href="./plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <span class="precio2"><b>Desde</b> S/ 60.00</span>
+                    </div>
+                    <div class="items2">
+                        <img class="img-producto2" src="./img/queque_naranja.avif" alt="queque de naranja">
+                        <h3 class="nombre-producto2">Queque de naranja</h3>
+                        <a href="./plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <span class="precio2"><b>Desde</b> S/ 60.00</span>
+                    </div>
+                    <div class="items2">
+                        <img class="img-producto2" src="./img/queque_naranja.avif" alt="queque de naranja">
+                        <h3 class="nombre-producto2">Queque de naranja</h3>
+                        <a href="./plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <span class="precio2"><b>Desde</b> S/ 60.00</span>
+                    </div>
+                    <div class="items2">
+                        <img class="img-producto2" src="./img/queque_naranja.avif" alt="queque de naranja">
+                        <h3 class="nombre-producto2">Queque de naranja</h3>
+                        <a href="./plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <span class="precio2"><b>Desde</b> S/ 60.00</span>
+                    </div>
+                    <div class="items2">
+                        <img class="img-producto2" src="./img/queque_naranja.avif" alt="queque de naranja">
+                        <h3 class="nombre-producto2">Queque de naranja</h3>
+                        <a href="./plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <span class="precio2"><b>Desde</b> S/ 60.00</span>
+                    </div>
+                    <div class="items2">
+                        <img class="img-producto2" src="./img/queque_naranja.avif" alt="queque de naranja">
+                        <h3 class="nombre-producto2">Queque de naranja</h3>
+                        <a href="./plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <span class="precio2"><b>Desde</b> S/ 60.00</span>
+                    </div>
+                    <div class="items2">
+                        <img class="img-producto2" src="./img/queque_naranja.avif" alt="queque de naranja">
+                        <h3 class="nombre-producto2">Queque de naranja</h3>
+                        <a href="./plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <span class="precio2"><b>Desde</b> S/ 60.00</span>
+                    </div>
+                    <div class="items2">
+                        <img class="img-producto2" src="./img/queque_naranja.avif" alt="queque de naranja">
+                        <h3 class="nombre-producto2">Queque de naranja</h3>
+                        <a href="./plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <span class="precio2"><b>Desde</b> S/ 60.00</span>
+                    </div>
+                    <div class="items2">
+                        <img class="img-producto2" src="./img/queque_naranja.avif" alt="queque de naranja">
+                        <h3 class="nombre-producto2">Queque de naranja</h3>
+                        <a href="./plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <span class="precio2"><b>Desde</b> S/ 60.00</span>
+                    </div>
+                    <div class="slider__btn2 slider__btn--right2" id="btn-right2">&#62;</div>
+                    <div class="slider__btn2 slider__btn--left2" id="btn-left2">&#60;</div>
                 </div>
             </section>
-        <!--Tarjeta de productos-->
-            <div class="news-cards">
-                <div>
-                    <img src="./img/queque_naranja.avif" alt="queque de naranja">
-                    <h3>Queque de naranja</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro animi sint odio consectetur magni maxime id tenetur assumenda praesentium temporibus.</p>
-                    <a href="./plantillas/detalle_producto.html" class="btn">Ver producto <i class="fas fa-angle-double-right"></i></a>
-                </div>
-                <div>
-                    <img src="./img/galletas con crema de chocolate.jpg" alt="galletas con crema de chocolate">
-                    <h3>galletas con crema de chocolate</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro animi sint odio consectetur magni maxime id tenetur assumenda praesentium temporibus.</p>
-                    <a href="./plantillas/detalle_producto.html" class="btn">Ver producto <i class="fas fa-angle-double-right"></i></a>
-                </div>
-                <div>
-                    <img src="./img/cupcake-crema-fresa.jpg" alt="cupcake crema de fresa">
-                    <h3>cupcake crema de fresa</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro animi sint odio consectetur magni maxime id tenetur assumenda praesentium temporibus.</p>
-                    <a href="./plantillas/detalle_producto.html" class="btn">Ver producto <i class="fas fa-angle-double-right"></i></a>
-                </div>
-                <div>
-                    <img src="./img/magdalenas de arandano.jpg" alt="magdalenas de arandano">
-                    <h3>magdalenas de arandanos</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro animi sint odio consectetur magni maxime id tenetur assumenda praesentium temporibus.</p>
-                    <a href="./plantillas/detalle_producto.html" class="btn">Ver producto <i class="fas fa-angle-double-right"></i></a>
-                </div>
-            </div>   
-            <section class="cards-banner-two">
-                <div class="content">
-                    <h2>Nuestros servicios </h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus perferendis sint quis veniam iste vitae aperiam, hic optio nihil illo excepturi mollitia dignissimos aut rem nesciunt maiores delectus. Distinctio, deleniti?</p>
-                    <a href="./plantillas/pedido.html" class="btn">Ver Servicios <i class="fas fa-angle-double-right"></i></a>
+            <div class="fresco1">
+                <h1>- Cajita de biscochuelos y tajada de pastel -</h1>
+                <p>encuentralas en sus diferentes Tamaños en nuestro local de <br>San Juan Bautista</p>
+            </div>
+            <section class="container-slider2">
+                <div class="cajita">
+                    <img class="cajita-tajada" id="id-cajita" src="./img/cajita_bicochuelos.jpg" alt="cajita de biscochuelos" >
+                    <img class="cajita-tajada" id="id-tajada" src="./img/tajada_pastel.jpg" alt="tajada_pastel">
                 </div>
             </section>
             <section class="social">
-                <p>Seguir Panaderia Bañico's</p>
-                <div class="links">
-                    <a href="https://www.facebook.com/Banicospan">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-                    <a href="https://www.instagram.com/banicospan/">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-
-                </div>
-            </section>
+                    <p>Siguenos en nuestros redes</p>
+                    <div class="links">
+                        <a class="redes" href="https://www.facebook.com/Banicospan" target="_blank">
+                            <i class="fab fa-square-facebook"></i>
+                        </a>
+                        <a class="redes" href="https://api.whatsapp.com/send?phone=51925394202&amp;text=Hola,%20deseo%20más%20información%20acerca%20de%20sus%20tortas%20🎂🍰" target="_blank">
+                            <i class="fab fa-square-whatsapp"></i>
+                        </a>
+                        <a class="redes" href="https://www.instagram.com/banicospan/" target="_blank">
+                            <i class="fab fa-square-instagram"></i>
+                        </a>
+                        <a class="redes" href="#" target="_blank">
+                            <i class="fab fa-square-twitter"></i>
+                        </a>
+                        <a class="redes" href="#" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </section>
+            </div>
+    
         </div>
-
-    </div>
-  
-    <div class="footer-links">
-        <div class="footer-container">
-            <ul>
-                <li>
-                    <a href="#">
-                        <h3>Titulo uno</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#">
-                        <h3>Titulo uno</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#">
-                        <h3>Titulo uno</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <a href="#">
-                        <h3>Titulo uno</h3>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-                <li>
-                    <a href="#">Cadena de Bloques</a>
-                </li>
-            </ul>
-
-        </div>
-    </div>
-    <footer class="footer">
-        <h3> 2023 Todos los derechos reservados</h3>
-    </footer>
-    <!--scroll reveal custom js-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="./Js/main.js"></script>
-    <script src="https://kit.fontawesome.com/90f45d6330.js" crossorigin="anonymous"></script>
+      
+        <footer class="footer-links">
+            <div class="footer-container">
+                <ul>
+                    <div class="ubicanos">
+                        <li>
+                            <a href="#">
+                                <h3>UBICANOS</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fas fa-map-marker-alt"></i> Asociacion los olivos, jr las dalias mz o lt 17-san juan bautista</a>
+                        </li>
+                        <li>
+                            <a href="mailto:a.banicospan@gmail.com.pe">
+                                <i class="fas fa-envelope"></i> a.banicospan@gmail.com.pe
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+51 925 394 202"> <i class="fas fa-mobile-alt"></i> +51 925 394 202</a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fas fa-phone-alt"></i> 01 447 3885</a>
+                        </li>
+                        <li>
+                            <a class="redes-footer" href="https://www.facebook.com/Banicospan" target="_blank">
+                                <span class="fab fa-square-facebook"></span>
+                            </a>
+                            <a class="redes-footer" href="https://api.whatsapp.com/send?phone=51925394202&amp;text=Hola,%20deseo%20más%20información%20acerca%20de%20sus%20tortas%20🎂🍰" target="_blank">
+                                <span class="fab fa-square-whatsapp"></span>
+                            </a>
+                            <a class="redes-footer" href="https://www.instagram.com/banicospan/" target="_blank">
+                                <i class="fab fa-square-instagram"></i>
+                            </a>
+                            <a class="redes-footer" href="https://www.youtube.com/@banicospanpanaderia" target="_blank"><i class="fab fa-square-youtube"></i></a>
+                        </li>
+                    </div>
+                </ul>
+                <ul>
+                    <div class="ubicanos">
+                        <li>
+                            <a href="#">
+                                <h3>categorias</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Biscochuelos</a>
+                        </li>
+                        <li>
+                            <a href="#">Pie</a>
+                        </li>
+                        <li>
+                            <a href="#">Ocaciones especiales</a>
+                        </li>
+                        <li>
+                            <a href="#">Merengados</a>
+                        </li>
+                        <li>
+                            <a href="#">Souffles</a>
+                        </li>
+                        <li>
+                            <a href="#">chesee cake</a>
+                        </li>
+                    </div>
+                </ul>
+                <ul>
+                    <div class="ubicanos">
+                        <li>
+                            <a href="#">
+                                <h3>informacion</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">preguntas frecuentes</a>
+                        </li>
+                        <li>
+                            <a href="#">terminos y condiciones</a>
+                        </li>
+                        <li>
+                            <a href="#">politica de privacidad</a>
+                        </li>
+                        <li>
+                            <a href="#">contactenos</a>
+                    </div>
+                </ul>
+                <ul>
+                    <div class="ubicanos">
+                        <li>
+                            <a href="#">
+                                <h3>enlaces rapidos</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./plantillas/login.html">iniciar sesion</a>
+                        </li>
+                        <li>
+                            <a href="./plantillas/registrarse.html">registrarme</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <div class="pagos">
+                <figure>
+                    <img class="tipos-pagos" src="./img/yape-logo.png">
+                </figure>
+                <figure>
+                    <img class="tipos-pagos" src="./img/plin-logo.png">
+                </figure>
+                <figure>
+                    <img class="tipos-pagos" src="./img/bcp1.png">
+                </figure>
+                <figure>
+                    <img class="tipos-pagos" src="./img/Interbank_logo.png">
+                </figure>
+                <figure>
+                    <img class="tipos-pagos" src="./img/bbvalogo2.png">
+                </figure>
+                <figure>
+                    <img class="tipos-pagos" src="./img/visa-logo.png">
+                </figure>
+            </div>
+        </footer>
+        <section>
+            <footer class="footer">
+                <p class="ruc"><b>Panaderia Bañico's EIRL</b><br>RUC:20108618966</p>
+                <h3> © 2023 Todos los derechos reservados</h3>
+            </footer>
+        </section>
+        <!--scroll reveal custom js-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="./Js/main.js"></script>
+        <!--bootstrap script-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/90f45d6330.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/b68941b8fb.js" crossorigin="anonymous"></script>
+    </section>    
 </body>
 </html>

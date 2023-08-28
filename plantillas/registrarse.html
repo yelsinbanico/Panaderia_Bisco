@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panaderia Bañico's</title>
+    <link rel="shortcut icon" href="../img/favicon-banico.png" type="image/x-icon">
+    <!--fond awesone-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css">
+    <!--fond oswald-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    
+    <!--custom css-->
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Styles/producto.css">
+    <link rel="stylesheet" href="../Styles/master.css">
+    <link rel="stylesheet" href="../Styles/registro.css">
+</head>
+<body>
+    <div class="menu-btn">
+        <i class="fas fa-bars fa-2x"></i>
+    </div>
+    <div class="container">
+
+        <nav class="nav-main">
+            <img src="../img/favicon-pana.png" alt="Udacity logo" class="nav-brand">
+            <ul class="nav-menu">
+                <li>
+                    <a class="emcabezado" href="../index.html"><i class="fa-solid fa-house"></i> INICIO</a> 
+                </li>
+                <li>
+                    <a a class="emcabezado" href="./nosotros.html"><i class="fa-solid fa-user-group"></i> ACERCA DE NOSOSTROS</a>
+                </li>
+                <li>
+                    <a a class="emcabezado" href="./producto.html"><i class="fa-sharp fa-solid fa-cake-candles"></i> PRODUCTOS</a>
+                </li>
+                <li>
+                    <a a class="emcabezado" href="./pedido.html"><i class="fa-solid fa-mobile-screen-button"></i> PEDIDOS ONLINE</a>
+                </li>
+                <li>
+                    <a a class="emcabezado" href="./contacto.html"><i class="fa-solid fa-address-card"></i> CONTACTANOS</a>
+                </li>
+                
+
+            </ul>
+
+            <!--Navegacion derecha-->
+            <ul class="nav-menu-right">
+                <li>
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </li> 
+            </ul>
+    
+        </nav>
+        <hr>
+    </div>   
+    <div class="login-box"> 
+        <img class="avatar" src="../img/logo_bañico.png" alt="Logo Bañico ">
+        <h1>Registrate</h1>
+        <p>Es rapido y facil</p>
+        <form action="">
+            <!--Nombre-->
+            <label for="Nombre">Nombre</label>
+            <input class="name" type="text" placeholder="Ingrese su nombre" required="">
+            <!--apellido-->
+            <label for="apellido">Apellidos</label>
+            <input class="apelli"  type="text" placeholder="Ingrese su apellido" required="">
+            <!--correo o telefono-->
+            <label for="correo o celular">Correo Electronico</label>
+            <input type="email" placeholder="Ingrese su correo o numero de celular" required="">
+            <!--contraseña-->
+            <label for="contraseña">Contraseña</label>
+            <input type="password" placeholder="introdusca una contraseña" required="">
+            
+            <input class="btn" type="submit" value="Registrarte">
+        </form>
+        
+
+
+
+    </div>
+    <script src="https://kit.fontawesome.com/90f45d6330.js" crossorigin="anonymous"></script>
+</body>
+</html>
+<!--{% endblock %}

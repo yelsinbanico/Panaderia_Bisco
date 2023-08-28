@@ -27,19 +27,19 @@
             <img src="../img/favicon-pana.png" alt="Udacity logo" class="nav-brand">
             <ul class="nav-menu">
                 <li>
-                    <a href="../index.html">INICIO</a> 
+                    <a class="emcabezado" href="../index.html"><i class="fa-solid fa-house"></i> INICIO</a> 
                 </li>
                 <li>
-                    <a href="./nosotros.html">ACERCA DE NOSOSTROS</a>
+                    <a a class="emcabezado" href="./nosotros.html"><i class="fa-solid fa-user-group"></i> ACERCA DE NOSOSTROS</a>
                 </li>
                 <li>
-                    <a href="./producto.html">PRODUCTOS</a>
+                    <a a class="emcabezado" href="./producto.html"><i class="fa-sharp fa-solid fa-cake-candles"></i> PRODUCTOS</a>
                 </li>
                 <li>
-                    <a href="./pedido.html">PEDIDOS ONLINE</a>
+                    <a a class="emcabezado" href="./pedido.html"><i class="fa-solid fa-mobile-screen-button"></i> PEDIDOS ONLINE</a>
                 </li>
                 <li>
-                    <a href="./contacto.html">CONTACTANOS</a>
+                    <a a class="emcabezado" href="./contacto.html"><i class="fa-solid fa-address-card"></i> CONTACTANOS</a>
                 </li>
                 
 
@@ -60,18 +60,18 @@
     <div class="login-box"> 
         <img class="avatar" src="../img/logo_bañico.png" alt="Logo Bañico ">
         <h1>Iniciar Sesion</h1>
-        <form >
+        <form action="">
             <!--username-->
-            <label for="Nombre de usuario">Nombre de Usuario</label>
-            <input type="text" placeholder="Ingrese el nombre de usuario">
+            <label for="Nombre de usuario" >Nombre de Usuario</label>
+            <input type="text" placeholder="Ingrese el nombre de usuario" required="">
             <!--password-->
             <label for="Contraseña">Contraseña</label>
-            <input type="password" placeholder="Introdusca la Contraseña">
-
-            <input type="submit" value="Iniciar Sesion">
-
+            <input type="password" placeholder="Introdusca la Contraseña" required="">
+            
+            <input class="btn" type="submit" value="Iniciar Sesion">
+            
             <a href="#" >Olvidaste tu contraseña</a><br>
-            <a href="#" >No tienes cuenta? Registrate</a>
+            <a href="registrarse.html" >No tienes cuenta? Registrate</a>
         </form>
         
 
