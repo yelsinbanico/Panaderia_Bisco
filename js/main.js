@@ -51,9 +51,9 @@ btnLeft.addEventListener('click', function(){
     moverIzquierda();
 });
 
-setInterval(function(){
+/*setInterval(function(){
     moverDerecha();
-}, 5000);
+}, 5000);*/
 
 /*para poner el slider  en movimiento ' las mas pedidas' vista index*/
 const slider2 =document.querySelector("#news-cards2");
@@ -99,13 +99,21 @@ btnLeft2.addEventListener('click', function(){
 setInterval(function(){
     moverDerecha2();
 }, 5000); 
+function stopAutoSlide() {
+    clearInterval(autoSlideInterval);
+}
 
-/* redireccionar de la ppagina index a la pagina producto*/
+// Inicia el desplazamiento automático al cargar la página
+startAutoSlide();
+
+// Detiene el desplazamiento automático cuando el cursor pasa sobre el slider
+slider2.addEventListener('mouseenter', stopAutoSlide);
+slider2.addEventListener('mouseleave', startAutoSlide);
+
+/* redireccionar de la pagina index parte categorias principales a la vista producto mediante el id de las imagenes*/
 const biscochuelos = document.querySelector("#id-biscochuelos");
-
-// Agrega el evento click para redirigir al hacer clic en la imagen
-biscochuelos.addEventListener("click", function () {
-  window.location.href = "../plantillas/producto.html"; // Reemplaza con la ruta correcta
+biscochuelos.addEventListener("click", function () {  // Agregamos el evento click para redirigir al hacer clic en la imagen
+  window.location.href = "../plantillas/producto.html"; 
 });
 
 const merengados=document.querySelector('#id-merengados');
@@ -141,6 +149,67 @@ cajitaBiscochuelos.addEventListener("click", function() {
 
 const tajadaPastel=document.querySelector('#id-tajada');
 tajadaPastel.addEventListener("click", function() {
+    window.location.href="../plantillas/detalle_compra.html";
+});
+
+/* redireccionar de la pagina index parte 'las mas pedidas'a la vista detalle_compra mediante el id de los nombres de los productos*/
+const biscochueloHuamanguino=document.querySelector('#id-biscochuelo-huamanguino');
+biscochueloHuamanguino.addEventListener("click", function() {
+    window.location.href="../plantillas/detalle_compra.html";
+});
+
+const quequeNaranja=document.querySelector('#id-queque-naranja');
+quequeNaranja.addEventListener("click", function() {
+    window.location.href="../plantillas/detalle_compra.html";
+});
+
+const merengadoChirimoya=document.querySelector('#id-merengado-chirimoya');
+merengadoChirimoya.addEventListener("click", function() {
+    window.location.href="../plantillas/detalle_compra.html";
+});
+
+const tortaChocolate=document.querySelector('#id-torta-chocolate');
+tortaChocolate.addEventListener("click", function() {
+    window.location.href="../plantillas/detalle_compra.html";
+});
+
+const tortaBrazilera=document.querySelector('#id-torta-brazilera');
+tortaBrazilera.addEventListener("click", function() {
+    window.location.href="../plantillas/detalle_compra.html";
+});
+
+const tortaFresa=document.querySelector('#id-torta-fresa');
+tortaFresa.addEventListener("click", function() {
+    window.location.href="../plantillas/detalle_compra.html";
+});
+
+const tortaGuanabana=document.querySelector('#id-torta-guanabana');
+tortaGuanabana.addEventListener("click", function() {
+    window.location.href="../plantillas/detalle_compra.html";
+});
+
+const tortaEncanelado=document.querySelector('#id-torta-encanelado');
+tortaEncanelado.addEventListener("click", function() {
+    window.location.href="../plantillas/detalle_compra.html";
+});
+
+const tortaLucuma=document.querySelector('#id-torta-lucuma');
+tortaLucuma.addEventListener("click", function() {
+    window.location.href="../plantillas/detalle_compra.html";
+});
+
+const tortaDurazno=document.querySelector('#id-torta-durazno');
+tortaDurazno.addEventListener("click", function() {
+    window.location.href="../plantillas/detalle_compra.html";
+});
+
+const tortaSelvaNegra=document.querySelector('#id-torta-selva-negra');
+tortaSelvaNegra.addEventListener("click", function() {
+    window.location.href="../plantillas/detalle_compra.html";
+});
+
+const tortaHawaiana=document.querySelector('#id-torta-hawaina');
+tortaHawaiana.addEventListener("click", function() {
     window.location.href="../plantillas/detalle_compra.html";
 });
 

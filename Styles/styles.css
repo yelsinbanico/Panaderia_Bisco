@@ -45,8 +45,8 @@ ul{
     margin-bottom: 30px;
 }
 .fresco1{
-    margin-top: 100px;
     margin-left: 0;
+   
 }
 .fresco1 h1{
     text-align: center;
@@ -57,6 +57,11 @@ ul{
     text-align: center;
     font-size: 18px;
     margin-bottom: 30px;
+}
+.fresco2{
+    text-align: center;
+    margin-top: 130px;
+    margin-bottom: 50px;
 }
 /* navigation */
 
@@ -143,7 +148,7 @@ hr {
     position: absolute;
     width: 40px;
     height: 40px;
-    background: #000, 0.7;
+    background:  #eed29a, 0.7;
     top: 50%;
     transform: translateY(-50%);
     font-size: 80px;
@@ -167,49 +172,92 @@ hr {
 .container-slider1{
     width: 90%;
     max-width: 900px;
-    margin: auto;
-   overflow: hidden;
-    display: block;
+    overflow: hidden;
+    display: inline;
     position: relative;
-   
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 100px;
     
 }
+
 .news-cards2{
-    display: inline-flex;
-    width: 1200%;
+    display: flex;
+    width: 200%;
     height: 400px;
     margin-left: -100%;
-    margin-bottom: 400px;
     text-align: center;
 }
 .items2{
     width: 100%;
     object-fit: cover;
-    margin-left: 10px; 
-    margin-right: 10px;
-}
-.items2 .precio2{
+    margin-left: 13px; 
+    margin-right: 13px;
+    position: relative;
+    cursor: pointer;
     text-align: center;
 }
+
 .img-producto2{
+   width: 354px;
+    height: 250px;
+    transition: 0.3s;
+
+}
+
+.img-producto2:hover {
+    transform: scale(1.05); /* Aumenta el tamaño en un 10% */
+  }
+  .news-cards2 .items2 .nombre-producto2 {
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 0;
+    padding-top: 20px;
+}
+.container-slider1 .news-cards2 .items2 .precio2{
+    text-align: center;
+    display: flex;
+    font-size: 20px;
+    margin-left: 100px;
+} 
+.news-cards2 .items2 .btn-opcion{
+    /* Estilos para el enlace "Ver Tamaños" */
+    position: absolute;
+    bottom: 50px; /* Ajusta la distancia desde la parte inferior */
+    left: 0%; /* Centra horizontalmente */
+    transform: translateX(-50%);
+    transform: translateY(-220%);
+    padding: 10px 108px;
+    background-color: #eed29a;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    opacity: 0;
+    text-transform: uppercase;
+    pointer-events: none; /* Evita que se puedan hacer clics */
+    transition: opacity 0.3s ease;
     
-    width: 100%;
-   
-   
-      
+    white-space: nowrap;
+}
+
+.items2:hover .btn-opcion{
+    opacity: 1;
+    pointer-events: auto;
 }
 .slider__btn2{
     position: absolute;
-    width: 40px;
-    height: 40px;
-    background: #000, 0.7;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    background: #eed29a, 0.2;
     top: 50%;
     transform: translateY(-450%);
-    font-size: 80px;
+    font-size: 70px;
     font-weight: bold;
     font-family: monospace;
     text-align: center;
-    border-radius: 30%;
+    border-radius: 10%;
     cursor: pointer;
 }
 .slider__btn2:hover{
@@ -222,6 +270,107 @@ hr {
     right: 10px;
 }
 
+/*los relevantes vista index*/
+.container-slider3{
+    width: 90%;
+    max-width: 900px;
+    overflow: hidden;
+    display: inline;
+    position: relative;
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 100px;
+    
+}
+.news-cards3{
+    display: flex;
+    width: 200%;
+    height: 400px;
+    margin-left: -100%;
+   
+    text-align: center;
+}
+.items3{
+    width: 100%;
+    object-fit: cover;
+    margin-left: 13px; 
+    margin-right: 13px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+.img-producto3{
+    width: 354px;
+     height: 250px;
+     transition: 0.3s;
+ 
+ }
+ 
+ .img-producto3:hover {
+     transform: scale(1.05); /* Aumenta el tamaño en un 10% */
+   }
+
+   .news-cards3 .items3 .nombre-producto3 {
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 0;
+    padding-top: 20px;
+}
+.container-slider3 .news-cards3 .items3 .precio3{
+    text-align: center;
+    display: flex;
+    font-size: 20px;
+    margin-left: 100px;
+} 
+.news-cards3 .items3 .btn-opcion3{
+    /* Estilos para el enlace "Ver Tamaños" */
+    position: absolute;
+    bottom: 50px; /* Ajusta la distancia desde la parte inferior */
+    left: 0%; /* Centra horizontalmente */
+    transform: translateX(-50%);
+    transform: translateY(-220%);
+    padding: 10px 108px;
+    background-color: #eed29a;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    opacity: 0;
+    text-transform: uppercase;
+    pointer-events: none; /* Evita que se puedan hacer clics */
+    transition: opacity 0.3s ease;
+    
+    white-space: nowrap;
+}
+
+.items3:hover .btn-opcion3{
+    opacity: 1;
+    pointer-events: auto;
+}
+.slider__btn3{
+    position: absolute;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    background: #eed29a, 0.2;
+    top: 50%;
+    transform: translateY(-450%);
+    font-size: 70px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 10%;
+    cursor: pointer;
+}
+.slider__btn3:hover{
+
+}
+.slider__btn--left3{
+    left: 10px;
+}
+.slider__btn--right3{
+    right: 10px;
+}
 /* cajita de biscochuelos y porcion de pastel vista index*/
 .container-slider2{
     width: 100%;
@@ -229,7 +378,10 @@ hr {
     max-height: 200px;
     overflow: hidden;
     display: inline;
-    position: relative;      
+    position: relative;
+    margin-top: 50px;  
+    margin-bottom: 100px;
+       
 }
 .container-slider2 .cajita{
     display: flex;
@@ -320,13 +472,12 @@ hr {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columnas */
     grid-gap: 20px; /* Espacio entre los elementos */
-    margin-top: 40px;
+    margin-top: 50px;
     margin-left: 80px;
     margin-right: 80px;
+    margin-bottom: 100px;
     padding-bottom: 0;
     justify-content: center;
-    background-color: #fff;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23aca792' fill-opacity='0.16' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 /* Agrega estas reglas a tu archivo CSS */
 
@@ -371,10 +522,10 @@ hr {
     margin-bottom: 10px;
   }
   /*btn opcion de la vista productos*/
-  .news-cards .items .btn-opcion {
+  /*.news-cards .items .btn-opcion {
     position: absolute;
-    bottom: 50%; /* Centrar verticalmente */
-    left: 50%; /* Centrar horizontalmente */
+    bottom: 50%;
+    left: 50%; 
     transform: translate(-50%, 50%);
     display: none;
     background-color: #b2dbd5;
@@ -385,16 +536,16 @@ hr {
     text-transform: capitalize;
     cursor: pointer;
     transition: background-color 0.3s;
-  }
+  }*/
   
-  .news-cards .items:hover .btn-opcion {
+  /*.news-cards .items:hover .btn-opcion {
     display: block;
   }
   
   .news-cards .items .btn-opcion:hover {
     background-color:#fff;
     color: #000;
-  }
+  }*/
 /*
 /* vista las mas pedidas*/
 
@@ -427,47 +578,7 @@ hr {
     transition: all 500ms ease;
 
 }*/
-.news-cards2 .items2 .btn-opcion{
-    /* Estilos para el enlace "Ver Tamaños" */
-    position: absolute;
-    bottom: 50px; /* Ajusta la distancia desde la parte inferior */
-    left: 0%; /* Centra horizontalmente */
-    transform: translateX(-50%);
-    transform: translateY(-50%);
-    padding: 10px 150px;
-    background-color: #eed29a;
-    color: #333;
-    text-decoration: none;
-    border-radius: 5px;
-    opacity: 0;
-    text-transform: uppercase;
-    pointer-events: none; /* Evita que se puedan hacer clics */
-    transition: opacity 0.3s ease;
-    
-    white-space: nowrap;
-}
 
-.items2:hover .btn-opcion{
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.news-cards2 .items2 .img-producto2:hover{
-    transform: scale(1.1);
-    opacity: .5;
-}
-.news-cards2 .items2 .nombre-producto2 {
-    text-align: center;
-    font-size: 20px;
-    text-transform: capitalize;
-    margin-top: 10px;
-    padding-top: 20px;
-}
-.news-cards2 .items2 .precio2{
-    text-align: center;
-    align-items: center;
-    display: flex;
-}
 
 /*tarjeta de productos 1*/
 .cards-banner-one{
