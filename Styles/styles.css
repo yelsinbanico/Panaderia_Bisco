@@ -27,7 +27,7 @@ ul{
 
 
 .container{
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 .fresco{
@@ -64,7 +64,16 @@ ul{
     margin-bottom: 50px;
 }
 /* navigation */
-
+/*.nav-bar{
+    background: #E38646;
+    padding: 20px;
+    display: block;
+    color: #000;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+    z-index: 1;
+}*/
 .nav-main{
     font-size: 17px;
     display: flex;
@@ -73,8 +82,59 @@ ul{
     height: 60px;
     padding: 10px 0;
     margin-top: 30px;
+    
+   
 }
 
+/*.nav-menu, .sub-menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nav-menu{
+    background: #555;
+    width: 100%;
+     margin-left: -100%;
+   
+}
+.emcabezado{
+    display: block;
+    color: #000;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+.sub-menu{
+    background: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.sub-menu .emcabezado{
+    background: #fff;
+    padding-left: 20px;
+}
+@media(min-width:1024px){
+    .nav-bar{
+        display: none;
+    }
+    .nav-menu{
+        margin-left: 0;
+        display: flex;
+    }
+    .nav-bar .sub-menu{
+        position: relative;
+    }
+    .sub-menu{
+        position: absolute;
+        top: 60px;
+        width: 200px;
+        overflow: visible;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+    }
+}*/
 .nav-brand {
     width: 100px;
 }
@@ -122,7 +182,6 @@ hr {
     max-width: 900px;
     margin: auto;
     overflow: hidden;
-   
     position: relative;
     display: inline;
 }
@@ -398,6 +457,112 @@ hr {
     
     
 }
+.container-personaliza {
+    background-image: url('../img/personaliza-pastel.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    position: relative;
+    height: 550px;
+}
+
+.image-container {
+    display: flex;
+   
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    margin-left: 450px;
+    margin-top: 50px;
+}
+
+.personaliza-torta {
+    text-align: center;
+    border: 5px solid #000;
+    border-radius: 5px;
+    margin-top: 150px;
+    margin-left: 10px;
+    max-width: 300px;
+    height: 150px;
+    cursor: pointer;
+    margin-bottom: 400px;
+    margin: 0 10px;
+}
+
+.text-container {
+    text-align: center;
+    
+}
+.text-container h1{
+    font-size: 60px;
+}
+.text-container p{
+    text-align: center;
+    font-size: 40px;
+}
+.text-container .btn-cotizar{
+    font-size: 30px;
+    background-color: green;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* personaliza tus tortas y tu cajita*/
+/*.container-personaliza{
+    background-image: url(../img/personaliza-pastel.png);
+    width: 100%;
+    height: 550px;
+    align-items: center;
+    justify-content: center;
+    display: block;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    
+}
+.container-personaliza::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(231, 220, 220, 0.514); 
+}
+.personaliza{
+ 
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+.personaliza-torta{
+    margin-top: 150px;
+    margin-left: 10px;
+    max-width: 300px;
+    height: 150px;
+    cursor: pointer;
+    margin-bottom: 400px;
+   
+}
+.text-personaliza{
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    align-items: center;
+  
+
+}
+.text-personaliza p{
+    text-align: center;
+}
+*/
 .showcase {
     width: 100%;
     height: 550px;
