@@ -16,164 +16,87 @@
    
     <!--custom css-->
     <link rel="stylesheet" href="../Styles/styles.css">
-    <link rel="stylesheet" href="../Styles/producto.css">
+    <link rel="stylesheet" href="../Styles/nosostros.css">
 </head>
 <body>
-    <section class="contenedor">
+    <header class="nav-bar">
         <div class="menu-btn">
             <i class="fas fa-bars fa-2x"></i>
         </div>
-        <div class="container">
+        <div class="container" id="container">
     
             <nav class="nav-main">
                 <img src="../img/favicon-pana.png" alt="Udacity logo" class="nav-brand">
                 <ul class="nav-menu">
                     <li>
-                        <a class="emcabezado" href="../index.html"><i class="fa-solid fa-house"></i> INICIO</a> 
+                        <a class="emcabezado" href="/index.html"><i class="fa-solid fa-house"></i> INICIO</a> 
                     </li>
                     <li>
-                        <a a class="emcabezado" href="./nosotros.html"><i class="fa-solid fa-user-group"></i> ACERCA DE NOSOSTROS</a>
+                        <a a class="emcabezado" href="nosotros.html"><i class="fa-solid fa-user-group"></i> ACERCA DE NOSOSTROS</a>
                     </li>
                     <li>
-                        <a a class="emcabezado" href="./producto.html"><i class="fa-sharp fa-solid fa-cake-candles"></i> PRODUCTOS</a>
+                        <a a class="emcabezado" href="producto.html"><i class="fa-sharp fa-solid fa-cake-candles"></i> PRODUCTOS</a>
                     </li>
                     <li>
-                        <a a class="emcabezado" href="./pedido.html"><i class="fa-solid fa-mobile-screen-button"></i> PEDIDOS ONLINE</a>
+                        <a a class="emcabezado" href="pedido.html"><i class="fa-solid fa-mobile-screen-button"></i> PEDIDOS ONLINE</a>
                     </li>
                     <li>
-                        <a a class="emcabezado" href="./contacto.html"><i class="fa-solid fa-address-card"></i> CONTACTANOS</a>
+                        <a a class="emcabezado" href="contacto.html"><i class="fa-solid fa-address-card"></i> CONTACTANOS</a>
                     </li>
-                    
-    
                 </ul>
-                <div class="login">
-                    <a  href="./login.html" class="boton" > <i class="fa-solid fa-user"></i></a>
-                    
-                </div>
                 <!--Navegacion derecha-->
                 <ul class="nav-menu-right">
-                    <li>
-                        <a href="#">
-                            <i class="fas fa-search"></i>
+                    <li class="buscar">
+                        <a class="buscar1" href="#">
+                            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>   
                         </a>
                     </li> 
                 </ul>
-        
+                <div class="horario">
+                    <a  href="#" class="horario1" > <i class="fa-sharp fa-solid fa-clock"></i></a>                    
+                </div>
+                <div class="login">
+                    <a  href="./plantillas/login.html" class="boton" > <i class="fa-solid fa-user"></i></a>                    
+                </div>
+                <div class="carrito">
+                    <a  href="./plantillas/producto.html" class="carrito1" > <i class="fa-solid fa-cart-shopping"></i></a>                    
+                </div>        
             </nav>
             <hr>
-            <div class="full-header">
-                <h1>Nuestros productos</h1>
-                <h2>Biscochuelos</h2>
-            </div>
+        </div>
+    </header>
+    <section class="contenedor">
+        <section class="categoria-producto">
+            <div class="titulo-productos">
+                <a class="tipo-producto boton" href="">Biscochuelos</a>
+                <a class="tipo-producto boton" href="">Tortas</a>
+                <a class="tipo-producto boton" href="">Bruselinas</a>
+                <a class="tipo-producto boton" href="">Tres Leches</a>
+                <a class="tipo-producto boton" href="">Merengados</a>
+                <a class="tipo-producto boton" href="">Souffles</a>
+                <a class="tipo-producto boton" href="">Chesse Cake</a>
+                <a class="tipo-producto boton" href="">Especiales</a>
+                <a class="tipo-producto boton" href="">Diversos Individuales</a>
+                <a class="tipo-producto boton" href="">Ocaciones Especiales</a>
+                <a class="tipo-producto boton" href="">CupCake</a>
+                <a class="tipo-producto boton" href="">Pie</a>
+            </div>     
+        </section>
+    <div class="full-header">
+        <h1>Nuestros productos</h1>
+        <h2>Biscochuelos</h2>
+    </div>
             <!--Tarjeta de productos-->
-            <div class="news-cards">                    
-                <div class="items">
-                    <img class="img-producto" id = "img1"src="../img/bisco_huamanguino.png" alt="biscochuelo huamanguino">
-                    <h3 class="nombre-producto" >Biscochuelo Huamanguino</h3>            
-                    <span class="precio">S/ 1.00 </span>
-                    <a href="./detalle_compra.html"  class="btn-opcion">Ver Opciones</a>                
-                </div>
-                <div class="items">
-                    <img class="img-producto"src="../img/bisco_tradi.png" alt="biscochuelo tradicional">
-                    <h3 class="nombre-producto">Biscochuelo Tradicional</h3>
-                    <a href="./detalle_compra.html"  class="btn-opcion">Ver Opciones</a>
-                    <span class="precio">S/ 1.50 </span>
-                    <button class="btn-comprar">Agregar al carrito</button>
-                </div>
-                <div class="items">
-                    <img class="img-producto"src="../img/biscochuelo_tipo keke.png" alt="biscochuelo tipo queque">
-                    <h3 class="nombre-producto">Biscochuelo tipo queque</h3>
-                    <a href="./detalle_compra.html"  class="btn-opcion">Ver Opciones</a>             
-                    <span class="precio">S/ 20.00 </span>
-                    <button class="btn-comprar">Agregar al carrito</button>
-                </div>
-                <div class="items">
-                    <img class="img-producto"src="../img/pastel de fresa.jpg" alt="pastel de fresa">
-                    <h3 class="nombre-producto">Pastel de fresa</h3>
-                    <a href="./detalle_compra.html"  class="btn-opcion">Ver Opciones</a>                
-                    <span class="precio">S/ 40.00 </span>
-                    <button class="btn-comprar">Agregar al carrito</button>
-                </div>
-            </div>
-            <div class="full-header">
-                <h2>Pasteles</h2>
-            </div>
-    
-            <div class="news-cards">
-                <div class="items">
-                    <img class="img-producto"src="../img/queque_naranja.avif" alt="queque de naranja">
-                    <h3 class="nombre-producto">pastel de arandanos</h3>
-                    <a href="./detalle_compra.html"  class="btn-opcion">Ver Opciones</a>             
-                    <span class="precio">S/ 40.00 </span>
-                    <button class="btn-comprar">Agregar al carrito</button>
-                </div>
-                <div class="items">
-                    <img class="img-producto"src="../img/galletas con crema de chocolate.jpg" alt="galletas con crema de chocolate">
-                    <h3 class="nombre-producto">pastel selva negra</h3>
-                    <a href="./detalle_compra.html"  class="btn-opcion">Ver Opciones</a>              
-                    <span class="precio">S/ 30.00 </span>
-                    <button class="btn-comprar">Agregar al carrito</button>
-                </div>
-                <div class="items">
-                    <img class="img-producto"src="../img/cupcake-crema-fresa.jpg" alt="cupcake crema de fresa">
-                    <h3 class="nombre-producto">pastel 3 pisos </h3>
-                    <a href="./detalle_compra.html"  class="btn-opcion">Ver Opciones</a>              
-                    <span class="precio">S/ 60.00</span>
-                    <button class="btn-comprar">Agregar al carrito</button>
-                </div>
-                <div class="items">
-                    <img class="img-producto"src="../img/magdalenas de arandano.jpg" alt="magdalenas de arandano">
-                    <h3 class="nombre-producto">magdalenas de arandanos</h3>
-                    <a href="./detalle_compra.html"  class="btn-opcion">Ver Opciones</a>               
-                    <span class="precio">S/ 4.50 </span>
-                    <button class="btn-comprar">Agregar al carrito</button>
-                </div>
-            </div>
-            
-            <div class="full-header">
-                <h2>Bocadillos</h2>
-            </div>
-    
-            <div class="news-cards">
-                <div class="items">
-                    <img class="img-producto"src="../img/queque_naranja.avif" alt="queque de naranja">
-                    <h3 class="nombre-producto">Queque de naranja</h3>
-                    <a href="./detalle_compra.html"  class="btn-opcion">Ver Opciones</a>               
-                    <span class="precio">S/ 30.00 </span>
-                    <button class="btn-comprar">Agregar al carrito</button>
-                </div>
-                <div class="items">
-                    <img class="img-producto"src="../img/galletas con crema de chocolate.jpg" alt="galletas con crema de chocolate">
-                    <h3 class="nombre-producto">galletas con crema de chocolate</h3>
-                    <a href="./detalle_compra.html"  class="btn-opcion">Ver Opciones</a>             
-                    <span class="precio">S/ 4.50 </span>
-                    <button class="btn-comprar">Agregar al carrito</button>
-                </div>
-                <div class="items">
-                    <img class="img-producto"src="../img/cupcake-crema-fresa.jpg" alt="cupcake crema de fresa">
-                    <h3 class="nombre-producto">cupcake crema de fresa</h3>
-                    <a href="./detalle_compra.html"  class="btn-opcion">Ver Opciones</a>               
-                    <span class="precio">S/ 2.50 </span>
-                    <button class="btn-comprar">Agregar al carrito</button>
-                </div>
-                <div class="items">
-                    <img class="img-producto"src="../img/magdalenas de arandano.jpg" alt="magdalenas de arandano">
-                    <h3 class="nombre-producto">magdalenas de arandanos</h3>
-                    <a href="./detalle_compra.html"  class="btn-opcion">Ver Opciones</a>              
-                    <span class="precio">S/ 2.00 </span>
-                    <button class="btn-comprar">Agregar al carrito</button>
-                </div>
-            </div>
-            <section class="social">
-                <p>Siguenos en nuestros redes</p>
-                <div class="links">
-                    <a class="redes" href="https://www.facebook.com/Banicospan" target="_blank">
-                        <i class="fab fa-square-facebook"></i>
-                    </a>
-                    <a class="redes" href="https://api.whatsapp.com/send?phone=51925394202&amp;text=Hola,%20deseo%20más%20información%20acerca%20de%20sus%20tortas%20🎂🍰" target="_blank">
+    <section class="social">
+        <p>Siguenos en nuestros redes</p>
+        <div class="links">
+            <a class="redes" href="https://www.facebook.com/Banicospan" target="_blank">
+                <i class="fab fa-square-facebook"></i>
+            </a>
+            <a class="redes" href="https://api.whatsapp.com/send?phone=51925394202&amp;text=Hola,%20deseo%20más%20información%20acerca%20de%20sus%20tortas%20🎂🍰" target="_blank">
                         <i class="fab fa-square-whatsapp"></i>
-                    </a>
-                    <a class="redes" href="https://www.instagram.com/banicospan/" target="_blank">
+            </a>
+            <a class="redes" href="https://www.instagram.com/banicospan/" target="_blank">
                         <i class="fab fa-square-instagram"></i>
                     </a>
                     <a class="redes" href="#" target="_blank">
@@ -182,11 +105,9 @@
                     <a class="redes" href="#" target="_blank">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                </div>
-            </section>
         </div>
-         
-        <div class="carrito-compras" id="carrito-compras">
+    </section>  
+<!--        <div class="carrito-compras" id="carrito-compras">
             <div class="header-carrito">
                 <h2>Tu carrito</h2>
             </div>
@@ -234,7 +155,7 @@
                 </div>
                     <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
             </div>
-        </div> 
+        </div> -->
               
         <footer class="footer-links">
             <div class="footer-container">

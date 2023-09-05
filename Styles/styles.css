@@ -12,7 +12,7 @@ body{
     background-color: #fff;
 /*background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23aca792' fill-opacity='0.16' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");*/
     font-size: 16px;
-    min-height: 100vh;
+    
     
 }
 
@@ -64,16 +64,14 @@ ul{
     margin-bottom: 50px;
 }
 /* navigation */
-/*.nav-bar{
-    background: #E38646;
-    padding: 20px;
+.nav-bar{
     display: block;
     color: #000;
-    cursor: pointer;
     font-size: 20px;
     width: 100%;
     z-index: 1;
-}*/
+    
+}
 .nav-main{
     font-size: 17px;
     display: flex;
@@ -81,64 +79,14 @@ ul{
     align-items: center;
     height: 60px;
     padding: 10px 0;
-    margin-top: 30px;
-    
-   
+    margin-top: 30px;  
+    white-space: nowrap;
 }
 
-/*.nav-menu, .sub-menu{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-.nav-menu{
-    background: #555;
-    width: 100%;
-     margin-left: -100%;
-   
-}
-.emcabezado{
-    display: block;
-    color: #000;
-    font-size: 20px;
-    padding: 10px;
-    text-decoration: none;
-}
-.sub-menu{
-    background: #fff;
-    height: 0;
-    overflow: hidden;
-    transition: all 0.3s;
-}
-.sub-menu .emcabezado{
-    background: #fff;
-    padding-left: 20px;
-}
-@media(min-width:1024px){
-    .nav-bar{
-        display: none;
-    }
-    .nav-menu{
-        margin-left: 0;
-        display: flex;
-    }
-    .nav-bar .sub-menu{
-        position: relative;
-    }
-    .sub-menu{
-        position: absolute;
-        top: 60px;
-        width: 200px;
-        overflow: visible;
-        z-index: 1000;
-        opacity: 0;
-        visibility: hidden;
-    }
-}*/
 .nav-brand {
     width: 100px;
 }
-/* nav left*/
+
 .nav-main ul {
     display: flex;
 }
@@ -155,6 +103,7 @@ ul{
 .nav-main ul .nav-menu{
     flex: 1;
     margin: 20px;
+    
 }
 
 .menu-btn{
@@ -171,6 +120,129 @@ ul{
     border-top: 1px solid red;
     color: red;
 }
+
+
+/**/
+
+/*navegacion derecha*/
+
+
+.nav-menu-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 15px;
+    white-space: nowrap;
+}
+
+.buscar .buscar1{
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    margin: 10px;
+    
+}
+.login{
+    display: block;
+}
+.login .boton{
+    font-size: 17px;
+    justify-content: space-between;
+    color: #000;
+    margin: 10px;
+}
+.login .submenu1{
+    display: block;
+    align-items: center;
+}
+
+.submenu1{
+    display: none;
+    height: 0;
+    overflow: visible;
+    transition: all 0.3s;
+    z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    
+}
+.horario .horario1{  
+    font-size: 17px;
+    display: block;
+    color: #000;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    margin: 10px;     
+}
+.horario .submenu1{
+    display: block;
+    align-items: center;
+   
+}
+.horario2{
+    white-space: nowrap;
+    font-size: 15px; 
+    display: none;
+    
+}
+
+/* Muestra "horario2" cuando se pasa el mouse sobre "horario1" */
+.horario1:hover + .submenu1 .horario2 {
+    display: block;
+    color: #000;
+    white-space: nowrap;
+    
+}
+
+.submenu1 .menu-link1{
+   
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 35px;
+}
+.login .boton, ul, li, a{
+    list-style: none;
+    text-decoration: none;
+    color: #000;   
+}
+.menu-item1{
+    margin-top: 5px;
+    text-align: left;
+    background: #fff;
+    display: block;    
+}
+
+.menu-link1{
+    white-space: nowrap;
+    
+}
+
+.horario:hover .submenu1{
+    opacity: 1;
+    visibility: visible;
+    display: grid;   
+}
+.login:hover .submenu1{
+    opacity: 1;
+    visibility: visible;
+    display: grid;
+}
+
+.carrito .carrito1{
+    font-size: 20px;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    margin: 10px;
+    color: #000;
+}
+
 /* SHOCASE*/
 hr {
     margin: 10px 0;
@@ -184,6 +256,7 @@ hr {
     overflow: hidden;
     position: relative;
     display: inline;
+   
 }
 .slider{
     display: flex;
@@ -608,7 +681,7 @@ hr {
 }
 
 /*banner productos*/
-.full-header{
+/*.full-header{
 
     position: relative;
     vertical-align: middle;
@@ -644,7 +717,6 @@ hr {
     padding-bottom: 0;
     justify-content: center;
 }
-/* Agrega estas reglas a tu archivo CSS */
 
 .news-cards .items {
     position: relative;
@@ -670,118 +742,17 @@ hr {
 
 .nombre-producto1 {
     position: absolute;
-    top: 10px; /* Ajusta la posición vertical según tus necesidades */
-    right: 10px; /* Ajusta la posición horizontal según tus necesidades */
+    top: 10px; /* Ajusta la posición vertical */
+    right: 10px; /* Ajusta la posición horizontal  */
     background-color:transparent;
     padding: 5px;
     border-radius: 5px;
     font-size: 20px;
 }
- 
-  
-  .news-cards .nombre-producto {
-    margin: 10px 0;
-  }
-  
-  .news-cards .items .precio {
-    margin-bottom: 10px;
-  }
-  /*btn opcion de la vista productos*/
-  /*.news-cards .items .btn-opcion {
-    position: absolute;
-    bottom: 50%;
-    left: 50%; 
-    transform: translate(-50%, 50%);
-    display: none;
-    background-color: #b2dbd5;
-    color: white;
-    font-size: 18px;
-    padding: 8px 20px;
-    border: none;
-    text-transform: capitalize;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }*/
-  
-  /*.news-cards .items:hover .btn-opcion {
-    display: block;
-  }
-  
-  .news-cards .items .btn-opcion:hover {
-    background-color:#fff;
-    color: #000;
-  }*/
-/*
-/* vista las mas pedidas*/
-
-/*.news-cards2{
-    display: flex;
-    grid-gap: 20px; 
-    margin-top: 80px;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-bottom: 80px;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px;   
-} */
-
-/*.news-cards2 .items2{
-    position: relative;
-    text-align: center;
-    overflow: hidden;
-    transition: all 500ms ease;
-    border-radius: 5px;
-    box-shadow: 1px 10 15px regba(0,0,0,0,50);   
-} */
-
-/*.news-cards2 .items2 .img-producto2{
-    max-width: 100%;
-    width: 400px;
-    align-items: center;
-    transition: all 500ms ease;
-
-}*/
-
-
-/*tarjeta de productos 1*/
-.cards-banner-one{
-    width: 100%;
-    height: 350px;
-    background: url(../img/banner_biscochuelo.jpg)no-repeat center center/cover;
-    margin-bottom: 40px;
-    
-
-}
-.cards-banner-one .content{
-    width: 40%;
-    padding: 90px 0 0 30px;
-    color: #ffffff;
-    text-align: justify;
+.mostrar{
+    margin-left: 0;
 }
 
-.cards-banner-one p,
-.cards-banner-one h2{
-    margin: 10px 0 20px 0; 
-}
-.content h2, p, a{
-    text-align: left;
-}
-
-/*terjeta de noticias 2*/
-.cards-banner-two {
-    width: 100%;
-    height: 350px;
-    background: url('../img/banner3.jpg') no-repeat center center/cover;
-    margin-bottom: 40px;
-}
-
-.cards-banner-two .content{
-    width: 50%;
-    padding: 100px 0 0 30px;
-    color: #ffffff;
-}
 /*redes sociales*/
 .social{
     margin: 50px;
@@ -810,62 +781,14 @@ hr {
     align-items: center;
     justify-content: center;
 }
+.redes{
+    font-size: 50px;
+}
 .links a{
     margin: 0 30px;
     
 }
 
-
-.nav-main.logo{
-    display: flex;
-    padding: 3px;
-}
-.nav-main.logo a{
-    padding: 3px;
-}
-.buscar .buscar1{
-    max-width: 100%;
-    font-size: 23px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-  
-}
-.login .boton{
-    max-width: 100%;
-    font-size: 23px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    padding-bottom: 25px;
-    margin: 20px;
-}
-.carrito .carrito1{
-    max-width: 100%;
-    font-size: 23px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    padding-bottom: 25px;
-    margin: 20px;
-}
-.horario .horario1{
-    max-width: 100%;
-    font-size: 23px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    padding-bottom: 25px;
-    margin: 20px;
-}
-
-.links a i{
-    font-size: 3rem;
-}
 
 /*pie de pagina*/
 .footer h3{
@@ -1050,7 +973,43 @@ hr {
     }
 
     }
-    */
+
+
+/* vista productos*/
+.categoria-producto{
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.tipo-producto.boton {
+    display: inline-block;
+    padding: 10 20px; /* Ajusta el padding según tus preferencias */
+    background-color: #E38646; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    border: none; /* Quita el borde del botón */
+    border-radius: 5px; /* Borde redondeado */
+    margin-right: 10px; /* Espacio entre los botones */
+    margin-top: 10px;
+    font-size: 17px;
+    
+  }
+  
+  .tipo-producto.boton:hover {
+    background-color: brown; /* Cambia el color de fondo en el hover */
+  }
+  
+  /* Ajusta el tamaño de todos los botones a un tamaño uniforme */
+  .tipo-producto.boton {
+    width: 180px; /* Ancho fijo para todos los botones */
+    height: 40px; /* Alto fijo para todos los botones */
+    line-height: 40px; /* Centra el texto verticalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+    align-items: center;
+  }
+  
+
 /*seccion carrito*/
 .carrito-compras{
     border: 1px solid #666;
@@ -1172,42 +1131,6 @@ hr {
 .carrito-total .btn-pagar:hover{
     scale: 1.05;
 }
-/*seccion responsive*/
-/*@media screen and (max-width:850px){
-.contenedor{
-    display: block;
-
-}
-.container{
-   width: 100% !important; 
-}
-
-}*/
-
-/*stylos vista nosostros*/
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
- 
-}
-
-.full-header{
-
-    position: relative;
-    vertical-align: middle;
-    color: #fff;
-    background: brown;
-    text-align: center;
-    z-index: 20px;
-    margin: auto;
-    padding: 80px;
-    font-size: 50px;
-    font-family: inline-block;
-}
-
 .sobre h1{
     color: brown;
     font-size: 40px;

@@ -18,56 +18,59 @@
     <link rel="stylesheet" href="./Styles/styles.css">
 </head>
 <body>
-    <header class="nav-bar">
+    <header class="nav-bar" id="btnMenu">
         <div class="menu-btn">
             <i class="fas fa-bars fa-2x"></i>
         </div>
         <div class="container" id="container">
-    
             <nav class="nav-main">
                 <img src="./img/favicon-pana.png" alt="logo panaderia" class="nav-brand">
                 <ul class="nav-menu">
                     <li class="menu-item">
-                        <a class="emcabezado" href="./index.html"><i class="fa-solid fa-house"></i> INICIO</a> 
+                        <a class="emcabezado" href="index.html"><i class="fa-solid fa-house"></i> INICIO</a> 
                     </li>
                     <li class="menu-item">
-                        <a a class="emcabezado" href="./plantillas/nosotros.html"><i class="fa-solid fa-user-group"></i> ACERCA DE NOSOSTROS</a>
+                        <a a class="emcabezado" href="/plantillas/nosotros.html"><i class="fa-solid fa-user-group"></i> ACERCA DE NOSOSTROS</a>
                     </li>
                     <li class="menu-item">
-                        <a a class="emcabezado" href="./plantillas/producto.html"><i class="fa-sharp fa-solid fa-cake-candles"></i></i> PRODUCTOS </a>
+                        <a a class="emcabezado" href="/plantillas/producto.html"><i class="fa-sharp fa-solid fa-cake-candles"></i></i> PRODUCTOS </a>
                         
                     </li>
                     <li class="menu-item">
-                        <a a class="emcabezado" href="./plantillas/pedido.html"><i class="fa-solid fa-mobile-screen-button"></i> PEDIDOS ONLINE</a>
+                        <a a class="emcabezado" href="/plantillas/pedido.html"><i class="fa-solid fa-mobile-screen-button"></i> PEDIDOS ONLINE</a>
                     </li>
                     <li class="menu-item">
-                        <a a class="emcabezado" href="./plantillas/contacto.html"><i class="fa-solid fa-address-card"></i> CONTACTANOS</a>
+                        <a a class="emcabezado" href="/plantillas/contacto.html"><i class="fa-solid fa-address-card"></i> CONTACTANOS</a>
                     </li>    
                 </ul>
                 
                 <!--Navegacion derecha-->
-                <ul class="nav-menu-right">
+                <section class="nav-menu-right" >
                     <li class="buscar">
-                        <a class="buscar1" href="#">
-                            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>   
-                        </a>
+                        <a class="buscar1" href="#"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
                     </li> 
-                </ul>
-                <div class="horario">
-                    <a  href="#" class="horario1" > <i class="fa-sharp fa-solid fa-clock"></i></a>                    
-                </div>
-                <div class="login">
-                    <a  href="./plantillas/login.html" class="boton" > <i class="fa-solid fa-user"></i></a>                    
-                </div>
-                <div class="carrito">
-                    <a  href="./plantillas/producto.html" class="carrito1" > <i class="fa-solid fa-cart-shopping"></i></a>                    
-                </div>
-    
+                    <li class="horario">
+                        <a class="horario1" href="#" > <i class="fa-sharp fa-solid fa-clock"></i></a>
+                        <ul class="submenu1">
+                            <li class="menu-item1 container-submenu"><h1 class="horario2">Visítanos en los siguientes horarios</h1></li>
+                            <li class="menu-item1"><p class="horario2">Lunes a sábado: 9 a.m. - 10 p.m. <br>Domingo: 9 a.m. - 3 p.m.</p></li>
+                        </ul>
+                    </li>
+                    <li class="login">
+                        <a class="boton" href="/plantillas/login.html" > <i class="fa-solid fa-user"></i></a>
+                        <ul class="submenu1">
+                            <li class="menu-item1 container-submenu"><a class="menu-link1" href="./plantillas/login.html">Iniciar Sesión</a></li>
+                            <li class="menu-item1 container-sub" ><a class="menu-link1" href="./plantillas/registrarse.html">Registrarse</a></li>
+                        </ul>
+                    </li>
+                    <li class="carrito">
+                        <a href="./plantillas/producto.html" class="carrito1"> <i class="fa-solid fa-cart-shopping"></i> Carrito</a>
+                    </li>
+                </section>
             </nav>
             <hr>
         </div>
-    </header>
-   
+    </header>  
     <section class="container-slider">
         <div class="slider" id="slider">
             <div class="slider__section">
@@ -90,15 +93,6 @@
         <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
     </section>
     <section class="contenedor">
-           
-            
-            <!--SHOWCASE-->
-            <!--<header class="showcase">
-                <h2>BISCOCHUELOS</h2>
-                <p>Son los pequeños placeres de la vida</p>
-                <a href="./plantillas/nosotros.html" class="btn">Leer Mas <i class="fas fa-angle-double-right"></i></a>
-            </header>
-            --> 
             <div class="fresco">
                 <h1>- Categorias Principales -</h1>
             </div>
@@ -476,6 +470,7 @@
         <script src="./js/slider_relevantes.js"></script>
         <script src="https://unpkg.com/scrollreveal"></script>
         <script src="./Js/main.js"></script>
+        <script src="/js/menu.js"></script>
         <!--bootstrap script-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/90f45d6330.js" crossorigin="anonymous"></script>
