@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contacta{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: left;
+    place-items: center;/*para centrear un bloque*/
+    
+}
+
+.contacta h2{
+    padding: 3px;
+    padding-top: 0;
+    font-size: 25px;
+    font-family: inline-block;/*tipo de letra*/
+}
+.contacta h1{
+    padding: 0;
+    padding-top: 0;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-family: inline-block;
+
+}
+
+.contacta p{
+    padding: 2px;
+    padding-bottom: 15px;
+}
+.contacta.queremos{
+    padding: 15px;
+}
+.contacta form{
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+
+}
+.text1{
+    display: flex;
+    padding: 8px;
+    margin: 5px;
+    flex-direction: column;
+    opacity: 0.5;
+    border: solid 2px;
+}
+.text2{
+    display: flex;
+    padding: 8px;
+    margin: 5px;
+    flex-direction: column;
+}
+.area{
+    display: flex;
+    padding: 8px;
+    margin: 5px;
+    flex-direction: column;
+}
+.enviar{
+    display: flex;
+    padding: 8px;
+    margin: 5px;
+    flex-direction: column; /*para poner los parrafos en columna*/
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+.imgcont{
+    width: 550px;
+    padding: 20px;
+}
+
+
+

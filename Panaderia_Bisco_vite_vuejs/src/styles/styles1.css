@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.nav-brand {
+    width: 100px;
+}
+.nav-bar{
+    background: #E38646;
+    padding: 20px;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    width: 100%;
+}
+.navegacion{
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+.main-nav{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 10px 0;
+    margin-top: 30px;
+    margin-left: 50px;
+    
+}
+.menu .submenu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu{
+    background:#fff;
+    width: 100%;
+    margin-left: -100%;
+    transition: all 0.5s; 
+    align-items: center;
+    list-style: none;
+    float: left; 
+   /* margin-left: -100%;*/
+   
+}
+.menu-link{
+    display: block;
+    padding: 10px;
+    color: #000;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;   
+}
+.submenu{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.submenu .menu-link{
+    background: #fff;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 35px;
+}
+
+.menu-link:hover{
+    border-bottom: 1px solid red;
+    border-top: 1px solid red;
+    color: red;
+  
+}
+
+.submenu .menu-link:hover{
+    border-bottom: 1px solid red;
+    border-top: 1px solid red;
+    color: red;
+}
+.mostrar{
+    margin-left: 0;
+
+}
+
+/*navegacion derecha*/
+.nav-menu-right{
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 10px 0;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-left: 150px;
+}
+
+.nav-menu-right .menu-link{
+    font-size: 20px;
+    margin: 10px;
+}
+.nav-menu-right .submenu{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.nav-menu-right .submenu .menu-link{
+    background: #fff;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 35px;    
+}
+.nav-menu-right .menu-link:hover{
+    border-bottom: 1px solid red;
+    border-top: 1px solid red;
+    color: red;
+  
+}
+
+.nav-menu-right .submenu .menu-link:hover{
+    border-bottom: 1px solid red;
+    border-top: 1px solid red;
+    color: red;
+}
+
+@media(min-width:1024px){
+    .nav-bar{
+        display:none;
+
+    }
+    .menu{
+        margin-left:0;
+        display: flex;
+    }
+    .container-submenu{
+        position: relative;
+    }
+    .submenu{
+        position: absolute;
+        top:60px;
+        width: 150px;
+        overflow: visible;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .container-submenu:hover .submenu{
+        opacity: 1;
+        visibility: visible;  
+    }
+
+    .nav-menu-right .submenu{
+        position: absolute;
+        top:60px;
+        width: 150px;
+        overflow: visible;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .nav-menu-right .container-submenu:hover .submenu{
+        opacity: 1;
+        visibility: visible;  
+    }
+    
+}
