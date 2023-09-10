@@ -12,7 +12,6 @@ body{
     background: #E38646;
     padding: 20px;
     display: block;
-    color: #fff;
     cursor: pointer;
     font-size: 20px;
     width: 100%;
@@ -30,8 +29,8 @@ body{
     height: 60px;
     padding: 10px 0;
     margin-top: 30px;
-    margin-left: 50px;
-    
+    margin-left: 20px;
+   
 }
 .menu .submenu{
     list-style: none;
@@ -39,14 +38,14 @@ body{
     margin: 0;
 }
 .menu{
-    background:#fff;
     width: 100%;
+    margin-top: 20px;
     margin-left: -100%;
     transition: all 0.5s; 
     align-items: center;
     list-style: none;
     float: left; 
-   /* margin-left: -100%;*/
+    font-weight: bold;
    
 }
 .menu-link{
@@ -56,7 +55,7 @@ body{
     font-size: 15px;
     text-transform: uppercase;
     text-decoration: none;
-    white-space: nowrap;   
+   /* white-space: nowrap;   */
 }
 .submenu{
     height: 0;
@@ -64,7 +63,6 @@ body{
     transition: all 0.3s;
 }
 .submenu .menu-link{
-    background: #fff;
     padding-bottom: 5px;
     padding-top: 5px;
     padding-right: 35px;
@@ -74,7 +72,6 @@ body{
     border-bottom: 1px solid red;
     border-top: 1px solid red;
     color: red;
-  
 }
 
 .submenu .menu-link:hover{
@@ -92,42 +89,95 @@ body{
     font-size: 17px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     height: 60px;
-    padding: 10px 0;
-    margin-top: 30px;
+    padding: 7px 0;
     margin-left: 50px;
-    margin-left: 150px;
-}
-
-.nav-menu-right .menu-link{
-    font-size: 20px;
-    margin: 10px;
+    list-style: none;  
+    margin-right: 50px;
+    
 }
 .nav-menu-right .submenu{
     height: 0;
     overflow: hidden;
     transition: all 0.3s;
+    margin: 10px 0;
+    padding: 0;
+   
 }
-.nav-menu-right .submenu .menu-link{
-    background: #fff;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    padding-right: 35px;    
+.nav-menu-right .submenu1{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+    margin: 10px 0;
+    padding: 0;  
+}
+
+.nav-menu-right .submenu {
+    background-color: #E38646;
+    padding-right: 250px;
+    padding-top: 10px;
+    padding-bottom: 78px;
+    padding-left: 20px;
+    display: block;
+    list-style: none;
+    margin: 0;
+    border-radius: 5px;
+    transform:translate(-35%,-25%);
+    z-index: 1;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+}
+.nav-menu-right .submenu .menu-item .horario2{
+    white-space: nowrap;
+    margin-top: 0;
+    padding: 0;  
+    text-align: left; 
+    font-size: 15px;
+    z-index: 1;    
+}
+.nav-menu-right .menu-link{
+    font-size: 20px;
+    margin:0 5px;
+    cursor: pointer;
+    display: flex;
+    
 }
 .nav-menu-right .menu-link:hover{
-    border-bottom: 1px solid red;
-    border-top: 1px solid red;
-    color: red;
-  
+    color: brown;
+    border-bottom: none;
+    border-top: none;
 }
 
-.nav-menu-right .submenu .menu-link:hover{
-    border-bottom: 1px solid red;
-    border-top: 1px solid red;
-    color: red;
+.nav-menu-right .submenu1 .menu-link{
+    text-transform: capitalize;
+    text-align: center; 
+    font-size: 15px;
+    padding: 5px 5px; 
+    margin: 0;
+   
 }
-
+.nav-menu-right .submenu1 {
+    background-color: #E38646;
+    display: block;
+    border-radius: 5px;
+    z-index: 1;
+    padding-right:30px;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 70px;
+    white-space: nowrap;
+    list-style: none;
+    margin: 0;
+    transform:translate(-20%, -28%);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+   
+}
+.nav-menu-right .submenu1 .menu-link:hover{
+    color: #fff;
+}
+hr {
+    margin: 10px 0;
+   
+}
 @media(min-width:1024px){
     .nav-bar{
         display:none;
@@ -167,5 +217,18 @@ body{
         opacity: 1;
         visibility: visible;  
     }
-    
+
+    .nav-menu-right .submenu1{
+        position: absolute;
+        top:60px;
+        width: 150px;
+        overflow: visible;
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .nav-menu-right .container-submenu:hover .submenu1{
+        opacity: 1;
+        visibility: visible;  
+    }
 }

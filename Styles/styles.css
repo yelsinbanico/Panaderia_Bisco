@@ -3,8 +3,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Open Sans';
-    
- 
 }
 body{
     background: #000000;
@@ -25,11 +23,6 @@ ul{
     list-style: none;
 }
 
-
-.container{
-    width: 100%;
-    margin: auto;
-}
 .fresco{
     margin-top: 300px;
     margin-left: 0;
@@ -81,6 +74,7 @@ ul{
     padding: 10px 0;
     margin-top: 30px;  
     white-space: nowrap;
+    
 }
 
 .nav-brand {
@@ -121,127 +115,14 @@ ul{
     color: red;
 }
 
-
-/**/
-
 /*navegacion derecha*/
 
 
-.nav-menu-right{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    margin-bottom: 15px;
-    white-space: nowrap;
-}
 
-.buscar .buscar1{
-    font-size: 20px;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    color: #000;
-    margin: 10px;
-    
-}
-.login{
-    display: block;
-}
-.login .boton{
-    font-size: 17px;
-    justify-content: space-between;
-    color: #000;
-    margin: 10px;
-}
-.login .submenu1{
-    display: block;
-    align-items: center;
-}
 
-.submenu1{
-    display: none;
-    height: 0;
-    overflow: visible;
-    transition: all 0.3s;
-    z-index: 1000;
-    visibility: hidden;
-    opacity: 0;
-    
-}
-.horario .horario1{  
-    font-size: 17px;
-    display: block;
-    color: #000;
-    text-align: center;
-    cursor: pointer;
-    display: block;
-    margin: 10px;     
-}
-.horario .submenu1{
-    display: block;
-    align-items: center;
-   
-}
-.horario2{
-    white-space: nowrap;
-    font-size: 15px; 
-    display: none;
-    
-}
 
-/* Muestra "horario2" cuando se pasa el mouse sobre "horario1" */
-.horario1:hover + .submenu1 .horario2 {
-    display: block;
-    color: #000;
-    white-space: nowrap;
-    
-}
 
-.submenu1 .menu-link1{
-   
-    padding-bottom: 5px;
-    padding-top: 5px;
-    padding-right: 35px;
-}
-.login .boton, ul, li, a{
-    list-style: none;
-    text-decoration: none;
-    color: #000;   
-}
-.menu-item1{
-    margin-top: 5px;
-    text-align: left;
-    background: #fff;
-    display: block;    
-}
 
-.menu-link1{
-    white-space: nowrap;
-    
-}
-
-.horario:hover .submenu1{
-    opacity: 1;
-    visibility: visible;
-    display: grid;   
-}
-.login:hover .submenu1{
-    opacity: 1;
-    visibility: visible;
-    display: grid;
-}
-
-.carrito .carrito1{
-    font-size: 20px;
-    display: flex;
-    text-transform: uppercase;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    margin: 10px;
-    color: #000;
-}
 
 /* SHOCASE*/
 hr {
@@ -349,9 +230,9 @@ hr {
 }
 .container-slider1 .news-cards2 .items2 .precio2{
     text-align: center;
-    display: flex;
+    
     font-size: 20px;
-    margin-left: 100px;
+    
 } 
 .news-cards2 .items2 .btn-opcion{
     /* Estilos para el enlace "Ver Tamaños" */
@@ -451,9 +332,8 @@ hr {
 }
 .container-slider3 .news-cards3 .items3 .precio3{
     text-align: center;
-    display: flex;
     font-size: 20px;
-    margin-left: 100px;
+
 } 
 .news-cards3 .items3 .btn-opcion3{
     /* Estilos para el enlace "Ver Tamaños" */
@@ -757,6 +637,20 @@ hr {
 .social{
     margin: 50px;
 }
+.social p{
+    font-size: 40px;
+    margin-top: 30px;
+    padding: 30px;
+    margin-left: 0;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: #ffe4c4;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+}
+.social p:hover{
+    color: #E38646;
+}
 .social .links .redes{
     max-width: 200px;
     margin: auto;
@@ -771,11 +665,6 @@ hr {
     scale: 1.05;
 }
 
-.social p{
-    text-align: center;
-    font-size: 30px;
-    margin-bottom: 20px;
-}
 .links{
     display: flex;
     align-items: center;
@@ -909,6 +798,7 @@ hr {
         opacity: .9;
         transform: translateX(-400px);
         transition: transform .5s ease-in-out;
+        z-index: 1;
     }
     .showcase {
         padding: 50px;
@@ -975,40 +865,6 @@ hr {
     }
 
 
-/* vista productos*/
-.categoria-producto{
-    display: inline-block;
-    margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-.tipo-producto.boton {
-    display: inline-block;
-    padding: 10 20px; /* Ajusta el padding según tus preferencias */
-    background-color: #E38646; /* Color de fondo del botón */
-    color: #fff; /* Color del texto */
-    text-decoration: none; /* Quita el subrayado de los enlaces */
-    border: none; /* Quita el borde del botón */
-    border-radius: 5px; /* Borde redondeado */
-    margin-right: 10px; /* Espacio entre los botones */
-    margin-top: 10px;
-    font-size: 17px;
-    
-  }
-  
-  .tipo-producto.boton:hover {
-    background-color: brown; /* Cambia el color de fondo en el hover */
-  }
-  
-  /* Ajusta el tamaño de todos los botones a un tamaño uniforme */
-  .tipo-producto.boton {
-    width: 180px; /* Ancho fijo para todos los botones */
-    height: 40px; /* Alto fijo para todos los botones */
-    line-height: 40px; /* Centra el texto verticalmente */
-    text-align: center; /* Centra el texto horizontalmente */
-    align-items: center;
-  }
-  
 
 /*seccion carrito*/
 .carrito-compras{
@@ -1131,71 +987,4 @@ hr {
 .carrito-total .btn-pagar:hover{
     scale: 1.05;
 }
-.sobre h1{
-    color: brown;
-    font-size: 40px;
-    text-align: center;
-    text-decoration: underline;
-    margin: auto;
-    padding: 70px;
-    font-family: inline-block;
-}
-.sobre p{
-    text-align: center;
-    font-size: 20px;
-    font-size: inline-block;
-    padding:50px;
-}
-.contenedor-nosotros {
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    margin: auto;
-     
-    
-}
-.contenedor-nosotros p{
-    padding: 25px;
-    padding-top: 8px;
-    font-size: 18px;
-    font-family: inline-block;
-    line-height:1.5;
-}
-.contenedor-nosotros h1{
-    padding: 25px;
-    padding-top: 0px;
-    padding-bottom: 5px;
-    text-align: left;
-    
-    
-}
-.imagen{
-    width: 550px;
-    margin: auto;
 
-}
-
-.txt h1, p{
-    text-align: justify;
-    margin: auto;
-}
-.cont{
-    background: #ffe4c4;
-    text-align: center;
-    padding: 10px;
-    border: brown solid 1px;
-}
-
-.vid h1{
-    text-align: center;
-    padding: 30px;
-
-}
-.vid video{
-    align-items: center;
-    padding: 30px;
-    width: 850px;
-    text-align: center;
-    
-
-}

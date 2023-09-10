@@ -1,6 +1,7 @@
-document.querySelector('.menu-btn').addEventListener('click', ()=>{
-    document.querySelector('.nav-menu').classList.toggle('show');
+/*document.querySelector('.login').addEventListener('click', ()=>{
+    document.querySelector('.login1').classList.toggle('show');
 });
+
 ScrollReveal().reveal('.showcase');
 ScrollReveal().reveal('.news-cards',{delay:500});
 ScrollReveal().reveal('.cards-banner-one',{delay:500});
@@ -9,6 +10,7 @@ ScrollReveal().reveal('.cards-banner-two',{delay:500});
 document.querySelector('.menu-btn').addEventListener('click', ()=>{
     document.querySelector('.login').classList.toggle('show');
 })
+*/
 
 /*para poner el slider  en movimiento  'categorias principales' vista index*/
 const slider =document.querySelector("#slider");

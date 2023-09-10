@@ -1,17 +1,80 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans';
- }
- .nav-main{
-    font-size: 17px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    padding: 10px 0;
+.full-header .container{
+    text-align: center;
     margin-top: 30px;
-    margin-left: 112px; 
-    margin-right: 112px;
-}  
+}
+
+.sobre h1{
+    color: brown;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 50px;
+    
+    font-family: inline-block;
+}
+.sobre p{
+    text-align: center;
+    font-size: 20px;
+    font-size: inline-block;
+    padding:50px;
+}
+.contenedor-nosotros {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-left: 50px;
+    margin-right: 50px;
+     
+    
+}
+.contenedor-nosotros p{
+    padding: 25px;
+    padding-top: 8px;
+    font-size: 18px;
+    font-family: inline-block;
+    line-height:1.5;
+}
+.contenedor-nosotros h1{
+    padding: 25px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    text-align: left;
+    
+    
+}
+.imagen{
+    width: 550px;
+    margin: auto;
+
+}
+
+.txt h1, p{
+    text-align: justify;
+    margin: auto;
+}
+.cont{
+    background: #ffe4c4;
+    text-align: center;
+    padding: 10px;
+    border: brown solid 1px;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+}
+
+.vid h1{
+    text-align: center;
+    padding: 30px;
+
+}
+.vid video{
+    margin-left: 320px;
+    align-items: center;
+    padding: 30px;
+    width: 850px;
+    text-align: center;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+    
+
+}
+.video{
+    border: 2px solid #000;  
+}

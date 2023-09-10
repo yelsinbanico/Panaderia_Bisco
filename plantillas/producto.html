@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panaderia Bañico's</title>
-    <link rel="shortcut icon" href="../img/favicon-banico.png" type="image/x-icon">
+    <title>Biscochuelos</title>
+    <link rel="shortcut icon" href="/img/favicon-banico.png" type="image/x-icon">
+     <!--Boostrap-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!--fond awesone-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -15,99 +17,123 @@
    <!--javascript--> 
    
     <!--custom css-->
-    <link rel="stylesheet" href="../Styles/styles.css">
-    <link rel="stylesheet" href="../Styles/nosostros.css">
+    <link rel="stylesheet" href="/Styles/styles.css">
+    <link rel="stylesheet" href="/Styles/styles1.css">
+    <link rel="stylesheet" href="/Styles/producto.css">
 </head>
 <body>
-    <header class="nav-bar">
-        <div class="menu-btn">
-            <i class="fas fa-bars fa-2x"></i>
-        </div>
-        <div class="container" id="container">
-    
-            <nav class="nav-main">
-                <img src="../img/favicon-pana.png" alt="Udacity logo" class="nav-brand">
-                <ul class="nav-menu">
-                    <li>
-                        <a class="emcabezado" href="/index.html"><i class="fa-solid fa-house"></i> INICIO</a> 
-                    </li>
-                    <li>
-                        <a a class="emcabezado" href="nosotros.html"><i class="fa-solid fa-user-group"></i> ACERCA DE NOSOSTROS</a>
-                    </li>
-                    <li>
-                        <a a class="emcabezado" href="producto.html"><i class="fa-sharp fa-solid fa-cake-candles"></i> PRODUCTOS</a>
-                    </li>
-                    <li>
-                        <a a class="emcabezado" href="pedido.html"><i class="fa-solid fa-mobile-screen-button"></i> PEDIDOS ONLINE</a>
-                    </li>
-                    <li>
-                        <a a class="emcabezado" href="contacto.html"><i class="fa-solid fa-address-card"></i> CONTACTANOS</a>
-                    </li>
-                </ul>
-                <!--Navegacion derecha-->
-                <ul class="nav-menu-right">
-                    <li class="buscar">
-                        <a class="buscar1" href="#">
-                            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>   
-                        </a>
-                    </li> 
-                </ul>
-                <div class="horario">
-                    <a  href="#" class="horario1" > <i class="fa-sharp fa-solid fa-clock"></i></a>                    
-                </div>
-                <div class="login">
-                    <a  href="./plantillas/login.html" class="boton" > <i class="fa-solid fa-user"></i></a>                    
-                </div>
-                <div class="carrito">
-                    <a  href="./plantillas/producto.html" class="carrito1" > <i class="fa-solid fa-cart-shopping"></i></a>                    
-                </div>        
-            </nav>
-            <hr>
-        </div>
+    <header class="navegacion">
+        <span class="nav-bar" id="btnMenu"><i class="fa-solid fa-bars"></i> Menu</span>
+        <nav class="main-nav">    
+            <ul class="menu" id="menu">
+                <img src="/img/favicon-pana.png" alt="logo panaderia" class="nav-brand">
+                <li class="menu-item"><a href="/index.html" class="menu-link"><i class="fa-solid fa-house"></i> Inicio</a></li>
+                <li class="menu-item"><a href="nosotros.html" class="menu-link"> <i class="fa-solid fa-user-group"></i>  Acerca de Nosostros</a></li>
+                <li class="menu-item container-submenu">
+                    <a href="producto.html" class="menu-link submenu-btn"> <i class="fa-sharp fa-solid fa-cake-candles"></i> Productos <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li class="menu-item"><a href="producto.html" class="menu-link">Biscochuelos</a></li>
+                        <li class="menu-item"><a href="/categorias/merengados.html" class="menu-link">Merengados</a></li>
+                        <li class="menu-item"><a href="/categorias/tortas.html" class="menu-link">Tortas</a></li>
+                        <li class="menu-item"><a href="/categorias/tres-leches.html" class="menu-link">Tres leches</a></li>
+                        <li class="menu-item"><a href="/categorias/souffles.html" class="menu-link">Souffles</a></li>
+                        <li class="menu-item"><a href="/categorias/bruselinas.html" class="menu-link">Bruselinas</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item"><a href="pedido.html" class="menu-link"> <i class="fa-solid fa-mobile-screen-button"></i> Pedidos Online</a></li>
+                <li class="menu-item"><a href="contacto.html" class="menu-link"><i class="fa-solid fa-address-card"></i> Contactanos</a></li>                           
+            </ul>
+            <!--navegacion derecha--> 
+            <section class="nav-menu-right" >
+                <li class="menu-item">
+                    <a class="menu-link" href="#"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
+                </li> 
+                <li class="menu-item container-submenu">
+                    <a class="menu-link" href="#" > <i class="fa-sharp fa-solid fa-clock"></i></a>
+                    <ul class="submenu">
+                        <li class="menu-item" ><h1 class="horario2"><b>Visítanos en los siguientes horarios</b></h1></li>
+                        <li class="menu-item"><p class="horario2">Lunes a sábado: 9 a.m. - 10 p.m. <br>Domingo: 9 a.m. - 3 p.m.</p></li>
+                    </ul>
+                </li>
+                <li class="menu-item container-submenu">
+                    <a class="menu-link login"  href="#" > <i class="fa-solid fa-user"></i></a>
+                    <ul class="submenu1 login1" >
+                        <li class="menu-item1 "><a class="menu-link" href="/plantillas/login.html"><i class="fa-solid fa-user"></i> Iniciar Sesión</a></li>
+                        <li class="menu-item1 " ><a class="menu-link" href="/plantillas/registrarse.html"><i class="fa-solid fa-user-pen"></i> Registrarse</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item">
+                    <a href="/plantillas/producto.html" class="menu-link"> <i class="fa-solid fa-cart-shopping"></i> Carrito</a>
+                </li>
+            </section>
+        </nav>
+        <hr>
     </header>
     <section class="contenedor">
         <section class="categoria-producto">
             <div class="titulo-productos">
-                <a class="tipo-producto boton" href="">Biscochuelos</a>
-                <a class="tipo-producto boton" href="">Tortas</a>
-                <a class="tipo-producto boton" href="">Bruselinas</a>
-                <a class="tipo-producto boton" href="">Tres Leches</a>
-                <a class="tipo-producto boton" href="">Merengados</a>
-                <a class="tipo-producto boton" href="">Souffles</a>
-                <a class="tipo-producto boton" href="">Chesse Cake</a>
-                <a class="tipo-producto boton" href="">Especiales</a>
-                <a class="tipo-producto boton" href="">Diversos Individuales</a>
-                <a class="tipo-producto boton" href="">Ocaciones Especiales</a>
-                <a class="tipo-producto boton" href="">CupCake</a>
-                <a class="tipo-producto boton" href="">Pie</a>
+                <a class="tipo-producto boton" href="producto.html">Biscochuelos</a>
+                <a class="tipo-producto boton" href="/categorias/tortas.html">Tortas</a>
+                <a class="tipo-producto boton" href="/categorias/bruselinas.html">Bruselinas</a>
+                <a class="tipo-producto boton" href="/categorias/tres-leches.html">Tres Leches</a>
+                <a class="tipo-producto boton" href="/categorias/merengados.html">Merengados</a>
+                <a class="tipo-producto boton" href="/categorias/souffles.html">Souffles</a>
+                <a class="tipo-producto boton" href="/categorias/chese-cake.html">Chesse Cake</a>
+                <a class="tipo-producto boton" href="/categorias/especiales.html">Especiales</a>
+                <a class="tipo-producto boton" href="/categorias/diversos-especiales.html">Diversos Individuales</a>
+                <a class="tipo-producto boton" href="/categorias/ocaciones-especiales.html">Ocaciones Especiales</a>
+                <a class="tipo-producto boton" href="/categorias/cupcake.html">CupCake</a>
+                <a class="tipo-producto boton" href="/categorias/pie.html">Pie</a>
             </div>     
         </section>
-    <div class="full-header">
-        <h1>Nuestros productos</h1>
-        <h2>Biscochuelos</h2>
-    </div>
-            <!--Tarjeta de productos-->
-    <section class="social">
-        <p>Siguenos en nuestros redes</p>
-        <div class="links">
-            <a class="redes" href="https://www.facebook.com/Banicospan" target="_blank">
-                <i class="fab fa-square-facebook"></i>
-            </a>
-            <a class="redes" href="https://api.whatsapp.com/send?phone=51925394202&amp;text=Hola,%20deseo%20más%20información%20acerca%20de%20sus%20tortas%20🎂🍰" target="_blank">
-                        <i class="fab fa-square-whatsapp"></i>
-            </a>
-            <a class="redes" href="https://www.instagram.com/banicospan/" target="_blank">
-                        <i class="fab fa-square-instagram"></i>
-                    </a>
-                    <a class="redes" href="#" target="_blank">
-                        <i class="fab fa-square-twitter"></i>
-                    </a>
-                    <a class="redes" href="#" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
+        <div class="full-header">
+            <h1>Nuestros productos</h1>
+            <h2>Biscochuelos</h2>
         </div>
-    </section>  
-<!--        <div class="carrito-compras" id="carrito-compras">
+        <section class="container-biscochuelos">
+            <div class="news-cards4" id="news-cards4">
+                <div class="items4" id="id-bisco1">
+                    <img class="img-producto4" src="/img/bisco_huamanguino-fb.jpg" alt="biscochuelo huamanguino">
+                    <h3 class="nombre-producto4" >Biscochuelo Huamanguino</h3>
+                    <a href="detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                    <span class="precio4"><b>Desde &nbsp</b> S/ 1.00</span>
+                </div>
+                <div class="items4" id="id-bisco2">
+                    <img class="img-producto4" src="/img/cajita_biscohuelo-fb.jpg" alt="caja biscohuelo">
+                    <h3 class="nombre-producto4" id="id-queque-naranja">Caja de Biscochuelos</h3>
+                    <a href="/plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                    <span class="precio4"><b>Desde &nbsp</b> S/ 30.00</span>
+                </div>
+                <div class="items4" id="id-bisco3">
+                    <img class="img-producto4" src="/img/queque-naranja-fb.jpg" alt="queque-naranja">
+                    <h3 class="nombre-producto4" id="id-queque-naranja">Biscochuelo tipo Queque</h3>
+                    <a href="/plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                    <span class="precio4"><b>Desde &nbsp</b> S/ 20.00</span>
+                </div>
+            </div>
+        </section>
+        <!--redes sociales-->
+        <section class="social">
+            <p>Siguenos en nuestras redes</p>
+            <div class="links">
+                <a class="redes" href="https://www.facebook.com/Banicospan" target="_blank">
+                    <i class="fab fa-square-facebook"></i>
+                </a>
+                <a class="redes" href="https://api.whatsapp.com/send?phone=51925394202&amp;text=Hola,%20deseo%20más%20información%20acerca%20de%20sus%20tortas%20🎂🍰" target="_blank">
+                            <i class="fab fa-square-whatsapp"></i>
+                </a>
+                <a class="redes" href="https://www.instagram.com/banicospan/" target="_blank">
+                            <i class="fab fa-square-instagram"></i>
+                        </a>
+                        <a class="redes" href="#" target="_blank">
+                            <i class="fab fa-square-twitter"></i>
+                        </a>
+                        <a class="redes" href="#" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+            </div>
+        </section>  
+        <!--<div class="carrito-compras" id="carrito-compras">
             <div class="header-carrito">
                 <h2>Tu carrito</h2>
             </div>
@@ -259,22 +285,22 @@
             </div>
             <div class="pagos">
                 <figure>
-                    <img class="tipos-pagos" src="../img/yape-logo.png">
+                    <img class="tipos-pagos" src="/img/yape-logo.png">
                 </figure>
                 <figure>
-                    <img class="tipos-pagos" src="../img/plin-logo.png">
+                    <img class="tipos-pagos" src="/img/plin-logo.png">
                 </figure>
                 <figure>
-                    <img class="tipos-pagos" src="../img/bcp1.png">
+                    <img class="tipos-pagos" src="/img/bcp1.png">
                 </figure>
                 <figure>
-                    <img class="tipos-pagos" src="../img/Interbank_logo.png">
+                    <img class="tipos-pagos" src="/img/Interbank_logo.png">
                 </figure>
                 <figure>
-                    <img class="tipos-pagos" src="../img/bbvalogo2.png">
+                    <img class="tipos-pagos" src="/img/bbvalogo2.png">
                 </figure>
                 <figure>
-                    <img class="tipos-pagos" src="../img/visa-logo.png">
+                    <img class="tipos-pagos" src="/img/visa-logo.png">
                 </figure>
             </div>
         </footer>
@@ -286,10 +312,10 @@
         </section>
         <!--scroll reveal custom js-->
         <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="../js/app.js" async></script>  
-        <script src="./Js/main.js"></script> 
+        <script src="/js/bicochuelos.js"></script>
+        <script src="/js/app.js" async></script>  
+        <script src="/Js/main.js"></script> 
         <script src="https://kit.fontawesome.com/90f45d6330.js" crossorigin="anonymous"></script>
-
         <script src="https://kit.fontawesome.com/b68941b8fb.js" crossorigin="anonymous"></script>
     </section>
 </body>

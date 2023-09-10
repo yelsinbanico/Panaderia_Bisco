@@ -12,7 +12,9 @@
     place-items: center;/*para centrear un bloque*/
     
 }
-
+.contacta .contacta1{
+    margin-top: 150px;
+}
 .contacta h2{
     padding: 3px;
     padding-top: 0;
@@ -61,18 +63,26 @@
     margin: 5px;
     flex-direction: column;
 }
-.enviar{
+.btn{
     display: flex;
     padding: 8px;
     margin: 5px;
+    text-align: center;
+    align-items: center;
     flex-direction: column; /*para poner los parrafos en columna*/
     background: #000;
     color: #fff;
-    text-align: center;
+    
+}
+.btn:hover{
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
 }
 .imgcont{
     width: 550px;
-    padding: 20px;
+    padding:0 20px;
+    margin-top: 0;
 }
 
 
