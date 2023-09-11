@@ -1,16 +1,20 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from "vue";
+import App from "./App.vue";
+
+// Importar Bootstrap
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 // Estilos existentes
-import './style.css'
+import "./style.css";
 
 // Estilos del proyecto original
-import './styles/contacta.css'
-import './styles/detalle.css'
-import './styles/master.css'
-import './styles/nosotros.css'
-import './styles/registro.css'
-import './styles/styles.css'
+import "./styles/contacta.css";
+import "./styles/detalle.css";
+import "./styles/master.css";
+import "./styles/nosotros.css";
+import "./styles/registro.css";
+import "./styles/styles.css";
 
 // Crear y montar la aplicación
-createApp(App).mount('#app')
+createApp(App).mount("#app");
