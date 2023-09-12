@@ -105,118 +105,179 @@ setInterval(function(){
 /* redireccionar de la pagina index parte categorias principales a la vista producto mediante el id de las imagenes*/
 const biscochuelos = document.querySelector("#id-biscochuelos");
 biscochuelos.addEventListener("click", function () {  // Agregamos el evento click para redirigir al hacer clic en la imagen
-  window.location.href = "../plantillas/producto.html"; 
+  window.location.href = "plantillas/producto.html"; 
 });
 
 const merengados=document.querySelector('#id-merengados');
 merengados.addEventListener("click", function() {
-    window.location.href="../plantillas/producto.html";
+    window.location.href="plantillas/producto.html";
 });
 
 const tortas=document.querySelector('#id-tortas');
 tortas.addEventListener("click", function() {
-    window.location.href="../plantillas/producto.html";
+    window.location.href="plantillas/producto.html";
 });
 
 const tresLeches=document.querySelector('#id-tres-leches');
 tresLeches.addEventListener("click", function() {
-    window.location.href="../plantillas/producto.html";
+    window.location.href="plantillas/producto.html";
 });
 
 const souffles=document.querySelector('#id-souffles');
 souffles.addEventListener("click", function() {
-    window.location.href="../plantillas/producto.html";
+    window.location.href="plantillas/producto.html";
 });
 
 const bruselinas=document.querySelector('#id-bruselinas');
 bruselinas.addEventListener("click", function() {
-    window.location.href="../plantillas/producto.html";
-});
-
-/*cajita de biscochuelos y tajada de pastel */
-const cajitasBiscochuelos=document.querySelector('#id-cajita');
-cajitasBiscochuelos.addEventListener("click", function() {
-    window.location.href="../plantillas/detalle_compra.html";
-});
-
-const tajadaPastel=document.querySelector('#id-tajada');
-tajadaPastel.addEventListener("click", function() {
-    window.location.href="../plantillas/detalle_compra.html";
+    window.location.href="plantillas/producto.html";
 });
 
 /* redireccionar de la pagina index parte 'las mas pedidas'a la vista detalle_compra mediante el id de los nombres de los productos*/
 var pedido1=document.querySelector('#id-producto1');
 pedido1.addEventListener("click", function() {
-    window.location.href="../plantillas/detalle_compra.html";
+    window.location.href="plantillas/detalle_compra.html";
 });
 
 var pedido2=document.querySelector('#id-producto2');
 pedido2.addEventListener("click", function() {
-    window.location.href="../plantillas/detalle_compra.html";
+    window.location.href="plantillas/detalle_compra.html";
 });
 
 var pedido3=document.querySelector('#id-producto3');
 pedido3.addEventListener("click", function() {
-    window.location.href="../plantillas/detalle_compra.html";
+    window.location.href="plantillas/detalle_compra.html";
 });
 
 var pedido4=document.querySelector('#id-producto4');
 pedido4.addEventListener("click", function() {
-    window.location.href="../plantillas/detalle_compra.html";
+    window.location.href="plantillas/detalle_compra.html";
 });
 
 var pedido5=document.querySelector('#id-producto5');
 pedido5.addEventListener("click", function() {
-    window.location.href="../plantillas/detalle_compra.html";
+    window.location.href="plantillas/detalle_compra.html";
 });
 
 var pedido6=document.querySelector('#id-producto6');
 pedido6.addEventListener("click", function() {
-    window.location.href="../plantillas/detalle_compra.html";
+    window.location.href="plantillas/detalle_compra.html";
 });
 
 var pedido7=document.querySelector('#id-producto7');
 pedido7.addEventListener("click", function() {
-    window.location.href="../plantillas/detalle_compra.html";
+    window.location.href="plantillas/detalle_compra.html";
 });
 
 var pedido8=document.querySelector('#id-producto8');
 pedido8.addEventListener("click", function() {
-    window.location.href="../plantillas/detalle_compra.html";
+    window.location.href="plantillas/detalle_compra.html";
 });
 
 var pedido9=document.querySelector('#id-producto9');
 pedido9.addEventListener("click", function() {
-    window.location.href="../plantillas/detalle_compra.html";
+    window.location.href="plantillas/detalle_compra.html";
 });
 
 var pedido10=document.querySelector('#id-producto10');
 pedido10.addEventListener("click", function() {
-    window.location.href="../plantillas/detalle_compra.html";
+    window.location.href="plantillas/detalle_compra.html";
 });
 
 var pedido11=document.querySelector('#id-producto11');
 pedido11.addEventListener("click", function() {
-    window.location.href="../plantillas/detalle_compra.html";
+    window.location.href="plantillas/detalle_compra.html";
 });
 
 var pedido12=document.querySelector('#id-producto12');
 pedido12.addEventListener("click", function() {
-    window.location.href="../plantillas/detalle_compra.html";
+    window.location.href="plantillas/detalle_compra.html";
+});
+
+/*cajita de biscochuelos y tajada de pastel */
+const cajitasBiscochuelos=document.querySelector('#id-cajita');
+cajitasBiscochuelos.addEventListener("click", function() {
+    window.location.href="plantillas/detalle_compra.html";
+});
+
+const tajadaPastel=document.querySelector('#id-tajada');
+tajadaPastel.addEventListener("click", function() {
+    window.location.href="plantillas/detalle_compra.html";
+});
+
+/* redireccionar de la pagina index parte 'relevantes'a la vista detalle_compra mediante el id de los nombres de los productos*/
+var relavante1=document.querySelector('#id-producto13');
+relavante1.addEventListener("click", function() {
+    window.location.href="plantillas/detalle_compra.html";
+});
+
+var relevante2=document.querySelector('#id-producto14');
+relevante2.addEventListener("click", function() {
+    window.location.href="plantillas/detalle_compra.html";
+});
+
+var relevante3=document.querySelector('#id-producto15');
+relevante3.addEventListener("click", function() {
+    window.location.href="plantillas/detalle_compra.html";
+});
+
+var relevante4=document.querySelector('#id-producto16');
+relevante4.addEventListener("click", function() {
+    window.location.href="plantillas/detalle_compra.html";
+});
+
+var relevante5=document.querySelector('#id-producto17');
+relevante5.addEventListener("click", function() {
+    window.location.href="plantillas/detalle_compra.html";
+});
+
+var relevante6=document.querySelector('#id-producto18');
+relevante6.addEventListener("click", function() {
+    window.location.href="plantillas/detalle_compra.html";
+});
+
+var relevante7=document.querySelector('#id-producto19');
+relevante7.addEventListener("click", function() {
+    window.location.href="plantillas/detalle_compra.html";
+});
+
+var relevante8=document.querySelector('#id-producto20');
+relevante8.addEventListener("click", function() {
+    window.location.href="plantillas/detalle_compra.html";
+});
+
+var relevante9=document.querySelector('#id-producto21');
+relevante9.addEventListener("click", function() {
+    window.location.href="plantillas/detalle_compra.html";
+});
+
+var relevante10=document.querySelector('#id-producto22');
+relevante10.addEventListener("click", function() {
+    window.location.href="plantillas/detalle_compra.html";
+});
+
+var relevante11=document.querySelector('#id-producto23');
+relevante11.addEventListener("click", function() {
+    window.location.href="plantillas/detalle_compra.html";
+});
+
+var relevante12=document.querySelector('#id-producto24');
+relevante12.addEventListener("click", function() {
+    window.location.href="plantillas/detalle_compra.html";
 });
 
 /**personaliza tus cajitas de biscochuelo u tus tortas vista index */
 const personalizaCajita=document.querySelector('#id-personaliza-cajita');
 personalizaCajita.addEventListener("click", function() {
-    window.location.href="../plantillas/detalle_compra.html";
+    window.location.href="plantillas/detalle_compra.html";
 });
 
 const personalizaBiscochuelo=document.querySelector('#id-personaliza-biscochuelo');
 personalizaBiscochuelo.addEventListener("click", function() {
-    window.location.href="../plantillas/detalle_compra.html";
+    window.location.href="plantillas/detalle_compra.html";
 });
 
 const personalizaTorta=document.querySelector('#id-personaliza-torta');
 personalizaTorta.addEventListener("click", function() {
-    window.location.href="../plantillas/detalle_compra.html";
+    window.location.href="plantillas/detalle_compra.html";
 });
