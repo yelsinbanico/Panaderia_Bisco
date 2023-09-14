@@ -55,7 +55,7 @@ btnLeft.addEventListener('click', function(){
 
 setInterval(function(){
     moverDerecha();
-}, 5000);
+}, 7000);
 
 /*para poner el slider  en movimiento ' las mas pedidas' vista index*/
 const slider2 =document.querySelector("#news-cards2");

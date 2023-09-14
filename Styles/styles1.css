@@ -113,7 +113,7 @@ body{
 }
 
 .nav-menu-right .submenu {
-    background-color: #E38646;
+    background-color: #fff;
     padding-right: 250px;
     padding-top: 10px;
     padding-bottom: 78px;
@@ -124,7 +124,7 @@ body{
     border-radius: 5px;
     transform:translate(-35%,-25%);
     z-index: 1;
-    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.7);
 }
 .nav-menu-right .submenu .menu-item .horario2{
     white-space: nowrap;
@@ -156,7 +156,7 @@ body{
    
 }
 .nav-menu-right .submenu1 {
-    background-color: #E38646;
+    background-color: #fff;
     display: block;
     border-radius: 5px;
     z-index: 1;
@@ -168,11 +168,11 @@ body{
     list-style: none;
     margin: 0;
     transform:translate(-20%, -28%);
-    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.7);
    
 }
 .nav-menu-right .submenu1 .menu-link:hover{
-    color: #fff;
+    color: #E38646;
 }
 hr {
     margin: 10px 0;

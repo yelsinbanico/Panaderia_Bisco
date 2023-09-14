@@ -96,10 +96,10 @@ function restarCantidad(event){
 function agregarAlCarritoClicked(event){
     var button =event.target;
     var item=button.parentElement;
-    var titulo=item.getElementsByClassName('nombre-producto')[0].innerText;
-    var precio=item.getElementsByClassName('precio')[0].innerText;
+    var titulo=item.getElementsByClassName('nombre-producto2')[0].innerText;
+    var precio=item.getElementsByClassName('precio2')[0].innerText;
    // var precioTotal=item.getElementsByClassName('carrito-precio-total')[0].innerText;
-    var imagenSrc=item.getElementsByClassName('img-producto')[0].src;
+    var imagenSrc=item.getElementsByClassName('img-producto2')[0].src;
     console.log(imagenSrc);
 
     //la siguiente funcion es agregar el producto al carrito, se manda por parametros los valores
@@ -114,14 +114,14 @@ function hacerVisibleCarrito(){
     carrito.style.marginRight = '0';
     carrito.style.opacity = '1';
 
-    var producto =document.getElementsByClassName('news-cards')[0];
+    var producto =document.getElementsByClassName('news-cards2')[0];
     producto.style.width = '60%';
 }
 
 //funcion que agrega un producto al carrito
 function agregarItemAlCarrito(titulo, precio,imagenSrc){
     var item=document.createElement('div');
-    item.classList.add=('items');
+    item.classList.add=('items2');
     var itemsCarrito=document.getElementsByClassName('carrito-items')[0];
 
     //vamos a controlar que el producto que este ingresando no se encuentra ya en el carrito
