@@ -1,0 +1,129 @@
+/* vista productos ***************************************************************************************************************/
+.categoria-producto{
+    display: inline-block;
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+.tipo-producto.boton {
+    display: inline-block;
+    padding: 10 20px; /* Ajusta el padding según tus preferencias */
+    background-color: #E38646; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    border: none; /* Quita el borde del botón */
+    border-radius: 5px; /* Borde redondeado */
+    margin-right: 10px; /* Espacio entre los botones */
+    margin-top: 10px;
+    font-size: 17px;
+    
+  }
+  
+  .tipo-producto.boton:hover {
+    background-color: brown; /* Cambia el color de fondo en el hover */
+  }
+  
+  /* Ajustamos el tamaño de todos los botones a un tamaño uniforme */
+  .tipo-producto.boton {
+    width: 180px; /* Ancho fijo para todos los botones */
+    height: 40px; /* Alto fijo para todos los botones */
+    line-height: 40px; /* Centra el texto verticalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+    align-items: center;
+  }
+  
+
+.full-header{
+    text-align: center;
+    margin-top: 30px;
+}  
+.full-header h1{
+    font-size: 30px;
+}
+.full-header h2{
+    font-size: 40px;
+    margin-top: 30px;
+    padding: 30px;
+    background-color: #ffe4c4;
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.5);
+}
+.full-header h2:hover{
+    color: #E38646;
+    
+}
+
+.container-biscochuelos{
+display: flex;
+justify-content: space-between;
+
+
+    
+}
+.news-cards4{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    margin: 30px 50px;
+    text-align: center;
+    margin-bottom: 200px;
+   
+}
+.items4{
+    margin: 30px 30px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    margin-left: 13px; 
+    margin-right: 13px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+}
+
+.img-producto4{
+    width: 450px;
+    height: 300px;
+    transition: 0.3s;
+
+}
+
+.img-producto4:hover {
+    transform: scale(1.05); /* Aumenta el tamaño en un 10% */
+  }
+  .news-cards4 .items4 .nombre-producto4 {
+    text-align: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-top: 0;
+    padding-top: 20px;
+}
+.container-biscochuelos .news-cards4 .items4 .precio4{
+    text-align: center;
+    font-size: 20px;
+    
+} 
+.news-cards4 .items4 .btn-opcion{
+    /* Estilos para el enlace "Ver Tamaños" */
+    position: absolute;
+    bottom: 50px; /* Ajusta la distancia desde la parte inferior */
+    left: 0%; /* Centra horizontalmente */
+    transform: translate(2%,12%);
+    padding: 10px 147px;
+    background-color: #eed29a;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    opacity: 0;
+    text-transform: uppercase;
+    pointer-events: none; /* Evita que se puedan hacer clics */
+    transition: opacity 0.3s ease;
+    
+    white-space: nowrap;
+}
+
+.items4:hover .btn-opcion{
+    opacity: 1;
+    pointer-events: auto;
+    color: brown;
+}
