@@ -1,418 +1,605 @@
-{% extends "base.html" %}
-
-{% block body %}
-<body>
-
-    <section class="container-slider">
-        <div class="slider" id="slider">
-            <div class="slider__section">
-                <img src="{{ url_for('static', filename='img/torta_chirimoya.jpg') }}" alt="torta de chirimoya" class="slider__img">
-            </div>
-            <div class="slider__section">
-                <img src="{{ url_for('static', filename='img/banner_biscochuelo.jpg') }}" alt="biscochuelo humanaguino" class="slider__img">
-            </div>
-            <div class="slider__section">
-                <img src="{{ url_for('static', filename='img/torta_chocolate.jpg') }}" alt="torta de chocolate" class="slider__img">
-            </div>
-            <div class="slider__section">
-                <img src="{{ url_for('static', filename='img/torta_vainilla.jpg') }}" alt="" class="slider__img">
-            </div>
-            <div class="slider__section">
-                <img src="{{ url_for('static', filename='img/rebanada-tiramisu.jpg') }}" alt="" class="slider__img">
-            </div>
-            
-        </div>
-        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
-        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
-    </section>
-    <section class="contenedor">
-        <div class="fresco">
-            <h1>- Categorias Principales -</h1>
-        </div>
-            <!--Tarjeta de productos-->
-        <div class="news-cards">  
-            <div class="items">
-                <img class="img-producto" id="id-biscochuelos" src="{{ url_for('static', filename='img/bisco_tradi-fb.jpg') }}" alt="biscochuelo huamanguino">
-                <h3 class="nombre-producto1"><b>BISCOCHUELOS</b></h3>
-            </div>
-            <div class="items">
-                <img class="img-producto" id="id-merengados" src="{{ url_for('static', filename='img/mrengue_frambuesa-fb.jpg') }}" alt="merengue de frambuesa">
-                <h3 class="nombre-producto1"><b>MERENGADOS</b></h3>
-            </div>
-            <div class="items">
-                <img class="img-producto" id="id-tortas" src="{{ url_for('static', filename='img/torta_chocolate-fb.jpg') }}" alt="torta de chocolate">
-                <h3 class="nombre-producto1"><b>TORTAS</b></h3>
-            </div>
-            <div class="items">
-                <img class="img-producto" id='id-tres-leches' src="{{ url_for('static', filename='img/tres_leches_fresa-fb.jpg') }}" alt="tres leches de fresa">
-                <h3 class="nombre-producto1"><b>TRES LECHES</b></h3>
-            </div>
-            <div class="items">
-                <img class="img-producto" id="id-souffles" src="{{ url_for('static', filename='img/souffle_fresa-fb.jpg') }}" alt="souffle de fresa">
-                <h3 class="nombre-producto1"><b>SOUFFLES</b></h3>
-            </div>
-            <div class="items">
-                <img class="img-producto" id='id-bruselinas' src="{{ url_for('static', filename='img/bruselina_fresa-fb.jpg') }}" alt="bruselina de fresa">
-                <h3 class="nombre-producto1"><b>BRUSELINAS</b></h3>
-            </div>
-            
-
-            </div>
-            <div class="fresco1">
-                <h1>- Las más pedidas -</h1>
-                <p>las preferidas por nuestros clientes ecuentralas en sus <br>diferentes sabores y Tamaños</p>
-            </div>
-            <!--las mas pedidas-->
-            <section class="container-slider1">
-                <div class="news-cards2" id="news-cards2">
-                    <div class="items2" id="id-producto1">
-                        <img class="img-producto2" src="{{ url_for('static', filename='img/bisco_huamanguino-fb.jpg') }}" alt="biscochuelo huamanguino">
-                        <h3 class="nombre-producto2" >Biscochuelo Huamanguino</h3>
-                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio2"><b>Desde &nbsp</b> S/ 1.00</span>
-                    </div>
-                    <div class="items2" id="id-producto2">
-                        <img class="img-producto2" src="{{ url_for('static', filename='img/cajita_biscohuelo-fb.jpg') }}" alt="caja biscohuelo">
-                        <h3 class="nombre-producto2" id="id-queque-naranja">Caja de Biscochuelos</h3>
-                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio2"><b>Desde &nbsp</b> S/ 30.00</span>
-                    </div>
-                    <div class="items2" id="id-producto3">
-                        <img class="img-producto2" src="{{ url_for('static', filename='img/torta_chirimoya-fb.jpg') }}" alt="torta chirimoya">
-                        <h3 class="nombre-producto2">Merengado de Chirimoya</h3>
-                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio2"><b>Desde &nbsp</b> S/ 65.00</span>
-                    </div>
-                    <div class="items2" id="id-producto4">
-                        <img class="img-producto2" src="{{ url_for('static', filename='img/torta_chocolate-fb.jpg') }}" alt="torta de chocolate">
-                        <h3 class="nombre-producto2">Torta de chocolate</h3>
-                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio2"><b>Desde &nbsp</b> S/ 65.00</span>
-                    </div>
-                    <div class="items2" id="id-producto5">
-                        <img class="img-producto2" src="{{ url_for('static', filename='img/torta_brazilera-fb.jpg') }}" alt="torta brazilera">
-                        <h3 class="nombre-producto2">Torta brazilera</h3>
-                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio2"><b>Desde &nbsp</b> S/ 60.00</span>
-                    </div>
-                    <div class="items2" id="id-producto6">
-                        <img class="img-producto2" src="{{ url_for('static', filename='img/torta_fresa-fb.jpg') }}" alt="torta de fresa">
-                        <h3 class="nombre-producto2">Torta de Fresa</h3>
-                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio2"><b>Desde &nbsp</b> S/ 70.00</span>
-                    </div>
-                    <div class="items2" id="id-producto7">
-                        <img class="img-producto2" src="{{ url_for('static', filename='img/torta_guanabana-fb.jpg') }}" alt="torta de guanabana">
-                        <h3 class="nombre-producto2">Torta de Guanábana</h3>
-                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio2"><b>Desde &nbsp</b> S/ 58.00</span>
-                    </div>
-                    <div class="items2" id="id-producto8">
-                        <img class="img-producto2" src="{{ url_for('static', filename='img/torta_encanelado-fb.jpg') }}" alt="torta_encanelado">
-                        <h3 class="nombre-producto2">Torta Encanelado</h3>
-                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio2"><b>Desde &nbsp</b> S/ 60.00</span>
-                    </div>
-                    <div class="items2" id="id-producto9">
-                        <img class="img-producto2" src="{{ url_for('static', filename='img/torta_lucuma-fb.jpg') }}" alt="torta de lucuma">
-                        <h3 class="nombre-producto2">Torta de Lucuma</h3>
-                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio2"><b>Desde &nbsp</b> S/ 60.00</span>
-                    </div>
-                    <div class="items2" id="id-producto10">
-                        <img class="img-producto2" src="{{ url_for('static', filename='img/torta_durasno-fb.jpg') }}" alt="Torta de durasno">
-                        <h3 class="nombre-producto2">Torta de Durazno</h3>
-                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio2"><b>Desde &nbsp</b> S/ 65.00</span>
-                    </div>
-                    <div class="items2" id="id-producto11">
-                        <img class="img-producto2" src="{{ url_for('static', filename='img/torta_selva_fb.jpg') }}" alt="torta_selva_negra">
-                        <h3 class="nombre-producto2">Torta Selva Negra</h3>
-                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio2"><b>Desde &nbsp</b> S/ 64.00</span>
-                    </div>
-                    <div class="items2" id="id-producto12">
-                        <img class="img-producto2" src="{{ url_for('static', filename='img/torta_hawaiyana-fb.jpg') }}" alt="torta hawaiyana">
-                        <h3 class="nombre-producto2">Torta Hawaiana</h3>
-                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio2"><b>Desde &nbsp</b> S/ 58.00</span>
-                    </div>
-                    
-
-                </div>
-                <div class="slider__btn2 slider__btn--right2" id="btn-right2">&#62;</div>
-                <div class="slider__btn2 slider__btn--left2" id="btn-left2">&#60;</div>
-            </section>
-            <div class="fresco1">
-                <h1>- Cajita de biscochuelos y tajada de pastel -</h1>
-                <p>encuentralas en sus diferentes Tamaños en nuestro local de <br>San Juan Bautista</p>
-            </div>
-            <section class="container-slider2">
-                <div class="cajita">
-                    <img class="cajita-tajada" id="id-cajita" src="{{ url_for('static', filename='img/cajita_bicochuelos.jpg') }}" alt="cajita de biscochuelos">
-                    <img class="cajita-tajada" id="id-tajada" src="{{ url_for('static', filename='img/tajada_pastel.jpg') }}" alt="tajada_pastel">
-                </div>
-                
-            </section>
-            <div class="fresco2">
-                <h1>- Relevantes -</h1>
-            </div>
-            <section class="container-slider3">
-                <div class="news-cards3" id="news-cards3">
-                    <div class="items3" id="id-producto13">
-                        <img class="img-producto3" src="img/bisco_tradi-fb.jpg" alt="biscochuelo huamanguino">
-                        <h3 class="nombre-producto3" >Biscochuelo Huamanguino</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion3"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio3"><b>Desde &nbsp</b> S/ 1.00</span>
-                    </div>
-                    <div class="items3" id="id-producto14">
-                        <img class="img-producto3" src="img/cajita_biscohuelo-fb.jpg" alt="cajita de biscochuelos">
-                        <h3 class="nombre-producto3" id="id-queque-naranja">Caja Biscohuelos</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion3"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio3"><b>Desde &nbsp</b> S/ 30.00</span>
-                    </div>
-                    <div class="items3" id="id-producto15">
-                        <img class="img-producto3" src="img/torta_chirimoya-fb.jpg" alt="torta chirimoya">
-                        <h3 class="nombre-producto3">Merengado de Chirimoya</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion3"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio3"><b>Desde &nbsp</b> S/ 65.00</span>
-                    </div>
-                    <div class="items3" id="id-producto16">
-                        <img class="img-producto3" src="img/torta_chocolate-fb.jpg" alt="torta de chocolate">
-                        <h3 class="nombre-producto3">Torta de chocolate</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion3"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio3"><b>Desde &nbsp</b> S/ 65.00</span>
-                    </div>
-                    <div class="items3" id="id-producto17">
-                        <img class="img-producto3" src="img/torta_brazilera-fb.jpg" alt="torta brazilera">
-                        <h3 class="nombre-producto3">Torta brazilera</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion3"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio3"><b>Desde &nbsp</b> S/ 60.00</span>
-                    </div>
-                    <div class="items3" id="id-producto18">
-                        <img class="img-producto3" src="img/torta_fresa-fb.jpg" alt="torta de fresa">
-                        <h3 class="nombre-producto3">Torta de Fresa</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion3"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio3"><b>Desde &nbsp</b> S/ 70.00</span>
-                    </div>
-                    <div class="items3" id="id-producto19">
-                        <img class="img-producto3" src="img/torta_guanabana-fb.jpg" alt="torta de guanabana">
-                        <h3 class="nombre-producto3">Torta de Guanábana</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion3"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio3"><b>Desde &nbsp</b> S/ 58.00</span>
-                    </div>
-                    <div class="items3" id="id-producto20">
-                        <img class="img-producto3" src="img/torta_encanelado-fb.jpg" alt="torta_encanelado">
-                        <h3 class="nombre-producto3">Torta Encanelado</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion3"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio3"><b>Desde &nbsp</b> S/ 60.00</span>
-                    </div>
-                    <div class="items3" id="id-producto21">
-                        <img class="img-producto3" src="img/torta_lucuma-fb.jpg" alt="torta de lucuma">
-                        <h3 class="nombre-producto3">Torta de Lucuma</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion3"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio3"><b>Desde &nbsp</b> S/ 60.00</span>
-                    </div>
-                    <div class="items3" id="id-producto22">
-                        <img class="img-producto3" src="img/torta_durasno-fb.jpg" alt="Torta de durasno">
-                        <h3 class="nombre-producto3">Torta de Durazno</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion3"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio3"><b>Desde &nbsp</b> S/ 65.00</span>
-                    </div>
-                    <div class="items3" id="id-producto23">
-                        <img class="img-producto3" src="img/torta_selva_fb.jpg" alt="torta_selva_negra">
-                        <h3 class="nombre-producto3">Torta Selva Negra</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion3"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio2"><b>Desde &nbsp</b> S/ 64.00</span>
-                    </div>
-                    <div class="items3" id="id-producto24">
-                        <img class="img-producto3" src="img/torta_hawaiyana-fb.jpg" alt="torta hawaiyana">
-                        <h3 class="nombre-producto3">Torta Hawaiana</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion3"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
-                        <span class="precio3"><b>Desde &nbsp</b> S/ 58.00</span>
-                    </div>
-
-                </div>
-                <div class="slider__btn3 slider__btn--right3" id="btn-right3">&#62;</div>
-                <div class="slider__btn3 slider__btn--left3" id="btn-left3">&#60;</div>
-            </section>
-            <div class="fresco2">
-                <h1>- Personaliza tus compras -</h1>
-            </div>
-            <section class="container-personaliza">
-                <div class="personaliza">
-                    <div class="image-container">
-                        <img class="personaliza-torta" id="id-personaliza-cajita" src="img/cajita_biscochuelo1-fm.jpg" alt="fototortas2">
-                        <img class="personaliza-torta" id="id-personaliza-biscochuelo" src="img/bisco_huamanguino-fm.jpg" alt="fiesta de cumpleanos">
-                        <img class="personaliza-torta" id="id-personaliza-torta" src="img/fototortas-fm1.jpg" alt="foto tortas1">
-                    </div>
-                    <div class="text-container">
-                        <p><b>Personaliza</b></p>
-                        <h1>Tus tortas o cajitas de biscochuelos</h1>
-                        <a class="btn-cotizar" href="https://api.whatsapp.com/send?phone=51925394202&amp;text=Hola,%20deseo%20más%20información%20acerca%20de%20sus%20tortas%20🎂🍰" target="_blank">
-                            <i class="fab fa-square-whatsapp"></i> Solicita tu cotización</a>
-                    </div>
-                </div>
-            </section>
-            
-            <section class="social">
-                <p>Siguenos en nuestras redes</p>
-                <div class="links">
-                    <a class="redes" href="https://www.facebook.com/Banicospan" target="_blank">
-                        <i class="fab fa-square-facebook"></i>
-                    </a>
-                    <a class="redes" href="https://api.whatsapp.com/send?phone=51925394202&amp;text=Hola,%20deseo%20más%20información%20acerca%20de%20sus%20tortas%20🎂🍰" target="_blank">
-                        <i class="fab fa-square-whatsapp"></i>
-                    </a>
-                    <a class="redes" href="https://www.instagram.com/banicospan/" target="_blank">
-                        <i class="fab fa-square-instagram"></i>
-                    </a>
-                    <a class="redes" href="#" target="_blank">
-                        <i class="fab fa-square-twitter"></i>
-                    </a>
-                    <a class="redes" href="#" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-            </section>
-        </div>
-        <footer class="footer-links">
-            <div class="footer-container">
-                <ul>
-                    <div class="ubicanos">
-                        <li>
-                            <a href="#">
-                                <h3>UBICANOS</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"> <i class="fas fa-map-marker-alt"&nbsp ></i> Asociacion los olivos, jr las dalias mz o lt 17-san juan bautista</a>
-                        </li>
-                        <li>
-                            <a href="mailto:a.banicospan@gmail.com.pe">
-                                <i class="fas fa-envelope"&nbsp ></i>a.banicospan@gmail.com.pe
-                            </a>
-                        </li>
-                        <li>
-                            <a href="tel:+51 925 394 202"> <i class="fas fa-mobile-alt"></i> +51 925 394 202</a>
-                        </li>
-                        <li>
-                            <a href="#"> <i class="fas fa-phone-alt"></i> 01 447 3885</a>
-                        </li>
-                        <li>
-                            <a class="redes-footer" href="https://www.facebook.com/Banicospan" target="_blank">
-                                <span class="fab fa-square-facebook"></span>
-                            </a>
-                            <a class="redes-footer" href="https://api.whatsapp.com/send?phone=51925394202&amp;text=Hola,%20deseo%20más%20información%20acerca%20de%20sus%20tortas%20🎂🍰" target="_blank">
-                                <span class="fab fa-square-whatsapp"></span>
-                            </a>
-                            <a class="redes-footer" href="https://www.instagram.com/banicospan/" target="_blank">
-                                <i class="fab fa-square-instagram"></i>
-                            </a>
-                            <a class="redes-footer" href="https://www.youtube.com/@banicospanpanaderia" target="_blank"><i class="fab fa-square-youtube"></i></a>
-                        </li>
-                    </div>
-                </ul>
-                <ul>
-                    <div class="ubicanos">
-                        <li>
-                            <a href="#">
-                                <h3>categorias</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">Biscochuelos</a>
-                        </li>
-                        <li>
-                            <a href="#">Pie</a>
-                        </li>
-                        <li>
-                            <a href="#">Ocaciones especiales</a>
-                        </li>
-                        <li>
-                            <a href="#">Merengados</a>
-                        </li>
-                        <li>
-                            <a href="#">Souffles</a>
-                        </li>
-                        <li>
-                            <a href="#">chesee cake</a>
-                        </li>
-                    </div>
-                </ul>
-                <ul>
-                    <div class="ubicanos">
-                        <li>
-                            <a href="#">
-                                <h3>informacion</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">preguntas frecuentes</a>
-                        </li>
-                        <li>
-                            <a href="#">terminos y condiciones</a>
-                        </li>
-                        <li>
-                            <a href="#">politica de privacidad</a>
-                        </li>
-                        <li>
-                            <a href="#">contactenos</a>
-                    </div>
-                </ul>
-                <ul>
-                    <div class="ubicanos">
-                        <li>
-                            <a href="#">
-                                <h3>enlaces rapidos</h3>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="plantillas/login.html">iniciar sesion</a>
-                        </li>
-                        <li>
-                            <a href="plantillas/registrarse.html">registrarme</a>
-                        </li>
-                    </div>
-                </ul>
-            </div>
-            <div class="pagos">
-                <figure>
-                    <img class="tipos-pagos" src="img/yape-logo.png">
-                </figure>
-                <figure>
-                    <img class="tipos-pagos" src="img/plin-logo.png">
-                </figure>
-                <figure>
-                    <img class="tipos-pagos" src="img/bcp1.png">
-                </figure>
-                <figure>
-                    <img class="tipos-pagos" src="img/Interbank_logo.png">
-                </figure>
-                <figure>
-                    <img class="tipos-pagos" src="img/bbvalogo2.png">
-                </figure>
-                <figure>
-                    <img class="tipos-pagos" src="img/visa-logo.png">
-                </figure>
-            </div>
-        </footer>
-        <section>
-            <footer class="footer">
-                <p class="ruc"><b>Panaderia Bañico's EIRL</b><br>RUC:20108618966</p>
-                <h3> &#169; 2023 Todos los derechos reservados</h3>
-            </footer>
-        </section>
-        <!--scroll reveal custom js-->
-        <script src="js/slider_relevantes.js"></script>
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script src="Js/main.js"></script>
-        <script src="js/menu.js"></script>
-        <!--bootstrap script-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/90f45d6330.js" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/b68941b8fb.js" crossorigin="anonymous"></script>
-    </section>    
-</body>
+{% extends "base.html" %} {% block optional_section %}
+<section class="container-slider">
+  <div class="slider" id="slider">
+    <div class="slider__section">
+      <img
+        src="{{ url_for('static', filename='img/torta_chirimoya.jpg') }}"
+        alt="torta de chirimoya"
+        class="slider__img"
+      />
+    </div>
+    <div class="slider__section">
+      <img
+        src="{{ url_for('static', filename='img/banner_biscochuelo.jpg') }}"
+        alt="biscochuelo humanaguino"
+        class="slider__img"
+      />
+    </div>
+    <div class="slider__section">
+      <img
+        src="{{ url_for('static', filename='img/torta_chocolate.jpg') }}"
+        alt="torta de chocolate"
+        class="slider__img"
+      />
+    </div>
+    <div class="slider__section">
+      <img
+        src="{{ url_for('static', filename='img/torta_vainilla.jpg') }}"
+        alt=""
+        class="slider__img"
+      />
+    </div>
+    <div class="slider__section">
+      <img
+        src="{{ url_for('static', filename='img/rebanada-tiramisu.jpg') }}"
+        alt=""
+        class="slider__img"
+      />
+    </div>
+  </div>
+  <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+  <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+</section>
+<section class="contenedor">
+  <div class="fresco">
+    <h1>- Categorias Principales -</h1>
+  </div>
+  <!--Tarjeta de productos-->
+  <div class="news-cards">
+    <div class="items">
+      <img
+        class="img-producto"
+        id="id-biscochuelos"
+        src="{{ url_for('static', filename='img/bisco_tradi-fb.jpg') }}"
+        alt="biscochuelo huamanguino"
+      />
+      <h3 class="nombre-producto1"><b>BISCOCHUELOS</b></h3>
+    </div>
+    <div class="items">
+      <img
+        class="img-producto"
+        id="id-merengados"
+        src="{{ url_for('static', filename='img/mrengue_frambuesa-fb.jpg') }}"
+        alt="merengue de frambuesa"
+      />
+      <h3 class="nombre-producto1"><b>MERENGADOS</b></h3>
+    </div>
+    <div class="items">
+      <img
+        class="img-producto"
+        id="id-tortas"
+        src="{{ url_for('static', filename='img/torta_chocolate-fb.jpg') }}"
+        alt="torta de chocolate"
+      />
+      <h3 class="nombre-producto1"><b>TORTAS</b></h3>
+    </div>
+    <div class="items">
+      <img
+        class="img-producto"
+        id="id-tres-leches"
+        src="{{ url_for('static', filename='img/tres_leches_fresa-fb.jpg') }}"
+        alt="tres leches de fresa"
+      />
+      <h3 class="nombre-producto1"><b>TRES LECHES</b></h3>
+    </div>
+    <div class="items">
+      <img
+        class="img-producto"
+        id="id-souffles"
+        src="{{ url_for('static', filename='img/souffle_fresa-fb.jpg') }}"
+        alt="souffle de fresa"
+      />
+      <h3 class="nombre-producto1"><b>SOUFFLES</b></h3>
+    </div>
+    <div class="items">
+      <img
+        class="img-producto"
+        id="id-bruselinas"
+        src="{{ url_for('static', filename='img/bruselina_fresa-fb.jpg') }}"
+        alt="bruselina de fresa"
+      />
+      <h3 class="nombre-producto1"><b>BRUSELINAS</b></h3>
+    </div>
+  </div>
+  <div class="fresco1">
+    <h1>- Las más pedidas -</h1>
+    <p>
+      las preferidas por nuestros clientes ecuentralas en sus <br />diferentes
+      sabores y Tamaños
+    </p>
+  </div>
+  <!--las mas pedidas-->
+  <section class="container-slider1">
+    <div class="news-cards2" id="news-cards2">
+      <div class="items2" id="id-producto1">
+        <img
+          class="img-producto2"
+          src="{{ url_for('static', filename='img/bisco_huamanguino-fb.jpg') }}"
+          alt="biscochuelo huamanguino"
+        />
+        <h3 class="nombre-producto2">Biscochuelo Huamanguino</h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio2"><b>Desde &nbsp</b> S/ 1.00</span>
+      </div>
+      <div class="items2" id="id-producto2">
+        <img
+          class="img-producto2"
+          src="{{ url_for('static', filename='img/cajita_biscohuelo-fb.jpg') }}"
+          alt="caja biscohuelo"
+        />
+        <h3 class="nombre-producto2" id="id-queque-naranja">
+          Caja de Biscochuelos
+        </h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio2"><b>Desde &nbsp</b> S/ 30.00</span>
+      </div>
+      <div class="items2" id="id-producto3">
+        <img
+          class="img-producto2"
+          src="{{ url_for('static', filename='img/torta_chirimoya-fb.jpg') }}"
+          alt="torta chirimoya"
+        />
+        <h3 class="nombre-producto2">Merengado de Chirimoya</h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio2"><b>Desde &nbsp</b> S/ 65.00</span>
+      </div>
+      <div class="items2" id="id-producto4">
+        <img
+          class="img-producto2"
+          src="{{ url_for('static', filename='img/torta_chocolate-fb.jpg') }}"
+          alt="torta de chocolate"
+        />
+        <h3 class="nombre-producto2">Torta de chocolate</h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio2"><b>Desde &nbsp</b> S/ 65.00</span>
+      </div>
+      <div class="items2" id="id-producto5">
+        <img
+          class="img-producto2"
+          src="{{ url_for('static', filename='img/torta_brazilera-fb.jpg') }}"
+          alt="torta brazilera"
+        />
+        <h3 class="nombre-producto2">Torta brazilera</h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio2"><b>Desde &nbsp</b> S/ 60.00</span>
+      </div>
+      <div class="items2" id="id-producto6">
+        <img
+          class="img-producto2"
+          src="{{ url_for('static', filename='img/torta_fresa-fb.jpg') }}"
+          alt="torta de fresa"
+        />
+        <h3 class="nombre-producto2">Torta de Fresa</h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio2"><b>Desde &nbsp</b> S/ 70.00</span>
+      </div>
+      <div class="items2" id="id-producto7">
+        <img
+          class="img-producto2"
+          src="{{ url_for('static', filename='img/torta_guanabana-fb.jpg') }}"
+          alt="torta de guanabana"
+        />
+        <h3 class="nombre-producto2">Torta de Guanábana</h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio2"><b>Desde &nbsp</b> S/ 58.00</span>
+      </div>
+      <div class="items2" id="id-producto8">
+        <img
+          class="img-producto2"
+          src="{{ url_for('static', filename='img/torta_encanelado-fb.jpg') }}"
+          alt="torta_encanelado"
+        />
+        <h3 class="nombre-producto2">Torta Encanelado</h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio2"><b>Desde &nbsp</b> S/ 60.00</span>
+      </div>
+      <div class="items2" id="id-producto9">
+        <img
+          class="img-producto2"
+          src="{{ url_for('static', filename='img/torta_lucuma-fb.jpg') }}"
+          alt="torta de lucuma"
+        />
+        <h3 class="nombre-producto2">Torta de Lucuma</h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio2"><b>Desde &nbsp</b> S/ 60.00</span>
+      </div>
+      <div class="items2" id="id-producto10">
+        <img
+          class="img-producto2"
+          src="{{ url_for('static', filename='img/torta_durasno-fb.jpg') }}"
+          alt="Torta de durasno"
+        />
+        <h3 class="nombre-producto2">Torta de Durazno</h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio2"><b>Desde &nbsp</b> S/ 65.00</span>
+      </div>
+      <div class="items2" id="id-producto11">
+        <img
+          class="img-producto2"
+          src="{{ url_for('static', filename='img/torta_selva_fb.jpg') }}"
+          alt="torta_selva_negra"
+        />
+        <h3 class="nombre-producto2">Torta Selva Negra</h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio2"><b>Desde &nbsp</b> S/ 64.00</span>
+      </div>
+      <div class="items2" id="id-producto12">
+        <img
+          class="img-producto2"
+          src="{{ url_for('static', filename='img/torta_hawaiyana-fb.jpg') }}"
+          alt="torta hawaiyana"
+        />
+        <h3 class="nombre-producto2">Torta Hawaiana</h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio2"><b>Desde &nbsp</b> S/ 58.00</span>
+      </div>
+    </div>
+    <div class="slider__btn2 slider__btn--right2" id="btn-right2">&#62;</div>
+    <div class="slider__btn2 slider__btn--left2" id="btn-left2">&#60;</div>
+  </section>
+  <div class="fresco1">
+    <h1>- Cajita de biscochuelos y tajada de pastel -</h1>
+    <p>
+      encuentralas en sus diferentes Tamaños en nuestro local de <br />San Juan
+      Bautista
+    </p>
+  </div>
+  <section class="container-slider2">
+    <div class="cajita">
+      <img
+        class="cajita-tajada"
+        id="id-cajita"
+        src="{{ url_for('static', filename='img/cajita_bicochuelos.jpg') }}"
+        alt="cajita de biscochuelos"
+      />
+      <img
+        class="cajita-tajada"
+        id="id-tajada"
+        src="{{ url_for('static', filename='img/tajada_pastel.jpg') }}"
+        alt="tajada_pastel"
+      />
+    </div>
+  </section>
+  <div class="fresco2">
+    <h1>- Relevantes -</h1>
+  </div>
+  <section class="container-slider3">
+    <div class="news-cards3" id="news-cards3">
+      <div class="items3" id="id-producto13">
+        <img
+          class="img-producto3"
+          src="{{ url_for('static', filename='img/bisco_tradi-fb.jpg') }}"
+          alt="biscochuelo huamanguino"
+        />
+        <h3 class="nombre-producto3">Biscochuelo Huamanguino</h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion3"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio3"><b>Desde &nbsp</b> S/ 1.00</span>
+      </div>
+      <div class="items3" id="id-producto14">
+        <img
+          class="img-producto3"
+          src="{{ url_for('static', filename='img/cajita_biscohuelo-fb.jpg') }}"
+          alt="cajita de biscochuelos"
+        />
+        <h3 class="nombre-producto3" id="id-queque-naranja">
+          Caja Biscohuelos
+        </h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion3"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio3"><b>Desde &nbsp</b> S/ 30.00</span>
+      </div>
+      <div class="items3" id="id-producto15">
+        <img
+          class="img-producto3"
+          src="{{ url_for('static', filename='img/torta_chirimoya-fb.jpg') }}"
+          alt="torta chirimoya"
+        />
+        <h3 class="nombre-producto3">Merengado de Chirimoya</h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion3"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio3"><b>Desde &nbsp</b> S/ 65.00</span>
+      </div>
+      <div class="items3" id="id-producto16">
+        <img
+          class="img-producto3"
+          src="{{ url_for('static', filename='img/torta_chocolate-fb.jpg') }}"
+          alt="torta de chocolate"
+        />
+        <h3 class="nombre-producto3">Torta de chocolate</h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion3"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio3"><b>Desde &nbsp</b> S/ 65.00</span>
+      </div>
+      <div class="items3" id="id-producto17">
+        <img
+          class="img-producto3"
+          src="{{ url_for('static', filename='img/torta_brazilera-fb.jpg') }}"
+          alt="torta brazilera"
+        />
+        <h3 class="nombre-producto3">Torta brazilera</h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion3"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio3"><b>Desde &nbsp</b> S/ 60.00</span>
+      </div>
+      <div class="items3" id="id-producto18">
+        <img
+          class="img-producto3"
+          src="{{ url_for('static', filename='img/torta_fresa-fb.jpg') }}"
+          alt="torta de fresa"
+        />
+        <h3 class="nombre-producto3">Torta de Fresa</h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion3"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio3"><b>Desde &nbsp</b> S/ 70.00</span>
+      </div>
+      <div class="items3" id="id-producto19">
+        <img
+          class="img-producto3"
+          src="{{ url_for('static', filename='img/torta_guanabana-fb.jpg') }}"
+          alt="torta de guanabana"
+        />
+        <h3 class="nombre-producto3">Torta de Guanábana</h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion3"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio3"><b>Desde &nbsp</b> S/ 58.00</span>
+      </div>
+      <div class="items3" id="id-producto20">
+        <img
+          class="img-producto3"
+          src="{{ url_for('static', filename='img/torta_encanelado-fb.jpg') }}"
+          alt="torta_encanelado"
+        />
+        <h3 class="nombre-producto3">Torta Encanelado</h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion3"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio3"><b>Desde &nbsp</b> S/ 60.00</span>
+      </div>
+      <div class="items3" id="id-producto21">
+        <img
+          class="img-producto3"
+          src="{{ url_for('static', filename='img/torta_lucuma-fb.jpg') }}"
+          alt="torta de lucuma"
+        />
+        <h3 class="nombre-producto3">Torta de Lucuma</h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion3"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio3"><b>Desde &nbsp</b> S/ 60.00</span>
+      </div>
+      <div class="items3" id="id-producto22">
+        <img
+          class="img-producto3"
+          src="{{ url_for('static', filename='img/torta_durasno-fb.jpg') }}"
+          alt="Torta de durazno"
+        />
+        <h3 class="nombre-producto3">Torta de Durazno</h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion3"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio3"><b>Desde &nbsp</b> S/ 65.00</span>
+      </div>
+      <div class="items3" id="id-producto23">
+        <img
+          class="img-producto3"
+          src="{{ url_for('static', filename='img/torta_selva_fb.jpg') }}"
+          alt="torta_selva_negra"
+        />
+        <h3 class="nombre-producto3">Torta Selva Negra</h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion3"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio3"><b>Desde &nbsp</b> S/ 64.00</span>
+      </div>
+      <div class="items3" id="id-producto24">
+        <img
+          class="img-producto3"
+          src="{{ url_for('static', filename='img/torta_hawaiyana-fb.jpg') }}"
+          alt="torta hawaiyana"
+        />
+        <h3 class="nombre-producto3">Torta Hawaiana</h3>
+        <a href="{{ url_for('detalle_compra') }}" class="btn-opcion3"
+          ><b
+            ><i class="fa-sharp fa-solid fa-magnifying-glass"></i> Ver
+            Tamaños</b
+          ></a
+        >
+        <span class="precio3"><b>Desde &nbsp</b> S/ 58.00</span>
+      </div>
+    </div>
+    <div class="slider__btn3 slider__btn--right3" id="btn-right3">&#62;</div>
+    <div class="slider__btn3 slider__btn--left3" id="btn-left3">&#60;</div>
+  </section>
+  <div class="fresco2">
+    <h1>- Personaliza tus compras -</h1>
+  </div>
+  <section class="container-personaliza">
+    <div class="personaliza">
+      <div class="image-container">
+        <img
+          class="personaliza-torta"
+          id="id-personaliza-cajita"
+          src="{{ url_for('static', filename='img/cajita_biscochuelo1-fm.jpg') }}"
+          alt="fototortas2"
+        />
+        <img
+          class="personaliza-torta"
+          id="id-personaliza-biscochuelo"
+          src="{{ url_for('static', filename='img/bisco_huamanguino-fm.jpg') }}"
+          alt="fiesta de cumpleanos"
+        />
+        <img
+          class="personaliza-torta"
+          id="id-personaliza-torta"
+          src="{{ url_for('static', filename='img/fototortas-fm1.jpg') }}"
+          alt="foto tortas1"
+        />
+      </div>
+      <div class="text-container">
+        <p><b>Personaliza</b></p>
+        <h1>Tus tortas o cajitas de biscochuelos</h1>
+        <a
+          class="btn-cotizar"
+          href="https://api.whatsapp.com/send?phone=51925394202&amp;text=Hola,%20deseo%20más%20información%20acerca%20de%20sus%20tortas%20🎂🍰"
+          target="_blank"
+        >
+          <i class="fab fa-square-whatsapp"></i> Solicita tu cotización</a
+        >
+      </div>
+    </div>
+  </section>
+  <section class="social">
+    <p>Siguenos en nuestras redes</p>
+    <div class="links">
+      <a
+        class="redes"
+        href="https://www.facebook.com/Banicospan"
+        target="_blank"
+      >
+        <i class="fab fa-square-facebook"></i>
+      </a>
+      <a
+        class="redes"
+        href="https://api.whatsapp.com/send?phone=51925394202&amp;text=Hola,%20deseo%20más%20información%20acerca%20de%20sus%20tortas%20🎂🍰"
+        target="_blank"
+      >
+        <i class="fab fa-square-whatsapp"></i>
+      </a>
+      <a
+        class="redes"
+        href="https://www.instagram.com/banicospan/"
+        target="_blank"
+      >
+        <i class="fab fa-square-instagram"></i>
+      </a>
+      <a class="redes" href="#" target="_blank">
+        <i class="fab fa-square-twitter"></i>
+      </a>
+      <a class="redes" href="#" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </section>
+</section>
+{% endblock %} {% block scripts %}
+<!--scroll reveal custom js-->
+<script src="{{ url_for('static', filename='js/slider_relevantes.js') }}"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="{{ url_for('static', filename='Js/main.js') }}"></script>
+<script src="{{ url_for('static', filename='js/menu.js') }}"></script>
+<!--bootstrap script-->
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://kit.fontawesome.com/90f45d6330.js"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://kit.fontawesome.com/b68941b8fb.js"
+  crossorigin="anonymous"
+></script>
 {% endblock %}
-
