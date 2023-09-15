@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {% block head %}
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Panaderia Bañico's</title>
     <link
       rel="shortcut icon"
-      href="../img/favicon-banico.png"
+      href="{{ url_for('static', filename='img/favicon-banico.png') }}"
       type="image/x-icon"
     />
     <!--Boostrap-->
@@ -38,11 +37,131 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='css/styles1.css') }}"
     />
-    <link
-      rel="stylesheet"
-      href="{{ url_for('static', filename='css/master.css') }}"
-    />
+    {% block extra_css %}{% endblock %}
+  </head>
+  <body>
+    {% block content %}
+    <header class="navegacion">
+      <span class="nav-bar" id="btnMenu"
+        ><i class="fa-solid fa-bars"></i> Menu</span
+      >
+      <nav class="main-nav">
+        <ul class="menu" id="menu">
+          <img
+            src="{{ url_for('static', filename='img/favicon-pana.png') }}"
+            alt="logo panaderia"
+            class="nav-brand"
+          />
+          <li class="menu-item">
+            <a href="{{ url_for('inicio') }}" class="menu-link"
+              ><i class="fa-solid fa-house"></i> Inicio</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="{{ url_for('acerca_de_nosotros') }}" class="menu-link">
+              <i class="fa-solid fa-user-group"></i> Acerca de Nosotros</a
+            >
+          </li>
+          <li class="menu-item container-submenu">
+            <a href="{{ url_for('productos') }}" class="menu-link submenu-btn">
+              <i class="fa-sharp fa-solid fa-cake-candles"></i> Productos
+              <i class="fa-solid fa-chevron-down"></i
+            ></a>
+            <ul class="submenu">
+              <!-- Aquí puedes seguir añadiendo más categorías de productos -->
+              <li class="menu-item">
+                <a href="{{ url_for('biscochuelos') }}" class="menu-link"
+                  >Biscochuelos</a
+                >
+              </li>
+              <li class="menu-item">
+                <a href="{{ url_for('merengados') }}" class="menu-link"
+                  >Merengados</a
+                >
+              </li>
+              <li class="menu-item">
+                <a href="{{ url_for('tortas') }}" class="menu-link">Tortas</a>
+              </li>
+              <li class="menu-item">
+                <a href="{{ url_for('tres_leches') }}" class="menu-link"
+                  >Tres leches</a
+                >
+              </li>
+              <li class="menu-item">
+                <a href="{{ url_for('souffles') }}" class="menu-link"
+                  >Souffles</a
+                >
+              </li>
+              <li class="menu-item">
+                <a href="{{ url_for('bruselinas') }}" class="menu-link"
+                  >Bruselinas</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="{{ url_for('pedidos_online') }}" class="menu-link">
+              <i class="fa-solid fa-mobile-screen-button"></i> Pedidos Online</a
+            >
+          </li>
+          <li class="menu-item">
+            <a href="{{ url_for('contacto') }}" class="menu-link"
+              ><i class="fa-solid fa-address-card"></i> Contáctanos</a
+            >
+          </li>
+        </ul>
+        <!--navegacion derecha-->
+        <section class="nav-menu-right">
+          <li class="menu-item">
+            <a class="menu-link" href="{{ url_for('buscar') }}"
+              ><i class="fa-sharp fa-solid fa-magnifying-glass"></i
+            ></a>
+          </li>
+          <li class="menu-item container-submenu">
+            <a class="menu-link" href="#">
+              <i class="fa-sharp fa-solid fa-clock"></i
+            ></a>
+            <ul class="submenu">
+              <li class="menu-item">
+                <h1 class="horario2">
+                  <b>Visítanos en los siguientes horarios</b>
+                </h1>
+              </li>
+              <li class="menu-item">
+                <p class="horario2">
+                  Lunes a sábado: 9 a.m. - 10 p.m. <br />Domingo: 9 a.m. - 3
+                  p.m.
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item container-submenu">
+            <a class="menu-link login" href="#">
+              <i class="fa-solid fa-user"></i
+            ></a>
+            <ul class="submenu1 login1">
+              <li class="menu-item1">
+                <a class="menu-link" href="{{ url_for('login') }}"
+                  ><i class="fa-solid fa-user"></i> Iniciar Sesión</a
+                >
+              </li>
+              <li class="menu-item1">
+                <a class="menu-link" href="{{ url_for('registrarse') }}"
+                  ><i class="fa-solid fa-user-pen"></i> Registrarse</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="menu-item">
+            <a href="{{ url_for('carrito') }}" class="menu-link">
+              <i class="fa-solid fa-cart-shopping"></i> Carrito</a
+            >
+          </li>
+        </section>
+      </nav>
+      <hr />
+    </header>
 
     {% endblock %}
-  </head>
+  </body>
 </html>

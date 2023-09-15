@@ -1,88 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panaderia Bañico's</title>
-    <link rel="shortcut icon" href="img/favicon-banico.png" type="image/x-icon">
-    <!--Boostrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <!--fond awesone-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css">
-    <!--fond oswald-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
-    
-    <!--custom css-->
-    <link rel="stylesheet" href="Styles/styles.css">
-    <link rel="stylesheet" href="Styles/styles1.css">
-</head>
+{% extends "base.html" %}
+
+{% block body %}
 <body>
-    <header class="navegacion">
-        <span class="nav-bar" id="btnMenu"><i class="fa-solid fa-bars"></i> Menu</span>
-        <nav class="main-nav">            
-            <ul class="menu" id="menu">
-                <img src="img/favicon-pana.png" alt="logo panaderia" class="nav-brand">
-                <li class="menu-item"><a href="index.html" class="menu-link"><i class="fa-solid fa-house"></i> Inicio</a></li>
-                <li class="menu-item"><a href="plantillas/nosotros.html" class="menu-link"> <i class="fa-solid fa-user-group"></i>  Acerca de Nosostros</a></li>
-                <li class="menu-item container-submenu">
-                    <a href="plantillas/producto.html" class="menu-link submenu-btn"> <i class="fa-sharp fa-solid fa-cake-candles"></i> Productos <i class="fa-solid fa-chevron-down"></i></a>
-                    <ul class="submenu">
-                        <li class="menu-item"><a href="plantillas/producto.html" class="menu-link">Biscochuelos</a></li>
-                        <li class="menu-item"><a href="categorias/merengados.html" class="menu-link">Merengados</a></li>
-                        <li class="menu-item"><a href="categorias/tortas.html" class="menu-link">Tortas</a></li>
-                        <li class="menu-item"><a href="categorias/tres-leches.html" class="menu-link">Tres leches</a></li>
-                        <li class="menu-item"><a href="categorias/souffles.html" class="menu-link">Souffles</a></li>
-                        <li class="menu-item"><a href="categorias/bruselinas.html" class="menu-link">Bruselinas</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item"><a href="plantillas/pedido.html" class="menu-link"> <i class="fa-solid fa-mobile-screen-button"></i> Pedidos Online</a></li>
-                <li class="menu-item"><a href="plantillas/contacto.html" class="menu-link"><i class="fa-solid fa-address-card"></i> Contactanos</a></li>                           
-            </ul>
-            <!--navegacion derecha--> 
-            <section class="nav-menu-right" >
-                <li class="menu-item">
-                    <a class="menu-link" href="#"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a>
-                </li> 
-                <li class="menu-item container-submenu">
-                    <a class="menu-link" href="#" > <i class="fa-sharp fa-solid fa-clock"></i></a>
-                    <ul class="submenu">
-                        <li class="menu-item" ><h1 class="horario2"><b>Visítanos en los siguientes horarios</b></h1></li>
-                        <li class="menu-item"><p class="horario2">Lunes a sábado: 9 a.m. - 10 p.m. <br>Domingo: 9 a.m. - 3 p.m.</p></li>
-                    </ul>
-                </li>
-                <li class="menu-item container-submenu">
-                    <a class="menu-link login"  href="#" > <i class="fa-solid fa-user"></i></a>
-                    <ul class="submenu1 login1" >
-                        <li class="menu-item1 "><a class="menu-link" href="plantillas/login.html"><i class="fa-solid fa-user"></i> Iniciar Sesión</a></li>
-                        <li class="menu-item1 " ><a class="menu-link" href="plantillas/registrarse.html"><i class="fa-solid fa-user-pen"></i> Registrarse</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item">
-                    <a href="plantillas/producto.html" class="menu-link"> <i class="fa-solid fa-cart-shopping"></i> Carrito</a>
-                </li>
-            </section>
-        </nav>
-        <hr>
-    </header>
+
     <section class="container-slider">
         <div class="slider" id="slider">
             <div class="slider__section">
-                <img src="img/torta_chirimoya.jpg" alt="torta de chrimoya" class="slider__img">
+                <img src="{{ url_for('static', filename='img/torta_chirimoya.jpg') }}" alt="torta de chirimoya" class="slider__img">
             </div>
             <div class="slider__section">
-                <img src="img/banner_biscochuelo.jpg" alt="biscochuelo humanaguino" class="slider__img">
+                <img src="{{ url_for('static', filename='img/banner_biscochuelo.jpg') }}" alt="biscochuelo humanaguino" class="slider__img">
             </div>
             <div class="slider__section">
-                <img src="img/torta_chocolate.jpg" alt="torta de chocolate" class="slider__img">
+                <img src="{{ url_for('static', filename='img/torta_chocolate.jpg') }}" alt="torta de chocolate" class="slider__img">
             </div>
             <div class="slider__section">
-                <img src="img/torta_vainilla.jpg" alt="" class="slider__img">
+                <img src="{{ url_for('static', filename='img/torta_vainilla.jpg') }}" alt="" class="slider__img">
             </div>
             <div class="slider__section">
-                <img src="img/rebanada-tiramisu.jpg" alt="" class="slider__img">
+                <img src="{{ url_for('static', filename='img/rebanada-tiramisu.jpg') }}" alt="" class="slider__img">
             </div>
+            
         </div>
         <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
         <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
@@ -93,30 +31,32 @@
         </div>
             <!--Tarjeta de productos-->
         <div class="news-cards">  
-                <div class="items">
-                    <img class="img-producto" id="id-biscochuelos" src="img/bisco_tradi-fb.jpg" alt="biscochuelo huamanguino">
-                    <h3 class="nombre-producto1"><b>BISCOCHUELOS</b></h3>
-                </div>
-                <div class="items">
-                    <img class="img-producto" id="id-merengados" src="img/mrengue_frambuesa-fb.jpg" alt="merengue de frambuesa">
-                    <h3 class="nombre-producto1"><b>MERENGADOS</b></h3>
-                </div>
-                <div class="items">
-                    <img class="img-producto" id="id-tortas" src="img/torta_chocolate-fb.jpg" alt="torta de chocolate">
-                    <h3 class="nombre-producto1"><b>TORTAS</b></h3>
-                </div>
-                <div class="items">
-                    <img class="img-producto"id='id-tres-leches' src="img/tres_leches_fresa-fb.jpg" alt="tres leches de fresa">
-                    <h3 class="nombre-producto1"><b>TRES LECHES</b></h3>
-                </div>
-                <div class="items">
-                    <img class="img-producto" id="id-souffles" src="img/souffle_fresa-fb.jpg" alt="souffle de fresa">
-                    <h3 class="nombre-producto1"><b>SOUFFLES</b></h3>
-                </div>
-                <div class="items">
-                    <img class="img-producto" id='id-bruselinas' src="img/bruselina_fresa-fb.jpg" alt="bruselina de fresa">
-                    <h3 class="nombre-producto1"><b>BRUSELINAS</b></h3>
-                </div>
+            <div class="items">
+                <img class="img-producto" id="id-biscochuelos" src="{{ url_for('static', filename='img/bisco_tradi-fb.jpg') }}" alt="biscochuelo huamanguino">
+                <h3 class="nombre-producto1"><b>BISCOCHUELOS</b></h3>
+            </div>
+            <div class="items">
+                <img class="img-producto" id="id-merengados" src="{{ url_for('static', filename='img/mrengue_frambuesa-fb.jpg') }}" alt="merengue de frambuesa">
+                <h3 class="nombre-producto1"><b>MERENGADOS</b></h3>
+            </div>
+            <div class="items">
+                <img class="img-producto" id="id-tortas" src="{{ url_for('static', filename='img/torta_chocolate-fb.jpg') }}" alt="torta de chocolate">
+                <h3 class="nombre-producto1"><b>TORTAS</b></h3>
+            </div>
+            <div class="items">
+                <img class="img-producto" id='id-tres-leches' src="{{ url_for('static', filename='img/tres_leches_fresa-fb.jpg') }}" alt="tres leches de fresa">
+                <h3 class="nombre-producto1"><b>TRES LECHES</b></h3>
+            </div>
+            <div class="items">
+                <img class="img-producto" id="id-souffles" src="{{ url_for('static', filename='img/souffle_fresa-fb.jpg') }}" alt="souffle de fresa">
+                <h3 class="nombre-producto1"><b>SOUFFLES</b></h3>
+            </div>
+            <div class="items">
+                <img class="img-producto" id='id-bruselinas' src="{{ url_for('static', filename='img/bruselina_fresa-fb.jpg') }}" alt="bruselina de fresa">
+                <h3 class="nombre-producto1"><b>BRUSELINAS</b></h3>
+            </div>
+            
+
             </div>
             <div class="fresco1">
                 <h1>- Las más pedidas -</h1>
@@ -126,77 +66,78 @@
             <section class="container-slider1">
                 <div class="news-cards2" id="news-cards2">
                     <div class="items2" id="id-producto1">
-                        <img class="img-producto2" src="img/bisco_huamanguino-fb.jpg" alt="biscochuelo huamanguino">
+                        <img class="img-producto2" src="{{ url_for('static', filename='img/bisco_huamanguino-fb.jpg') }}" alt="biscochuelo huamanguino">
                         <h3 class="nombre-producto2" >Biscochuelo Huamanguino</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
                         <span class="precio2"><b>Desde &nbsp</b> S/ 1.00</span>
                     </div>
                     <div class="items2" id="id-producto2">
-                        <img class="img-producto2" src="img/cajita_biscohuelo-fb.jpg" alt="caja biscohuelo">
+                        <img class="img-producto2" src="{{ url_for('static', filename='img/cajita_biscohuelo-fb.jpg') }}" alt="caja biscohuelo">
                         <h3 class="nombre-producto2" id="id-queque-naranja">Caja de Biscochuelos</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
                         <span class="precio2"><b>Desde &nbsp</b> S/ 30.00</span>
                     </div>
                     <div class="items2" id="id-producto3">
-                        <img class="img-producto2" src="img/torta_chirimoya-fb.jpg" alt="torta chirimoya">
+                        <img class="img-producto2" src="{{ url_for('static', filename='img/torta_chirimoya-fb.jpg') }}" alt="torta chirimoya">
                         <h3 class="nombre-producto2">Merengado de Chirimoya</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
                         <span class="precio2"><b>Desde &nbsp</b> S/ 65.00</span>
                     </div>
                     <div class="items2" id="id-producto4">
-                        <img class="img-producto2" src="img/torta_chocolate-fb.jpg" alt="torta de chocolate">
+                        <img class="img-producto2" src="{{ url_for('static', filename='img/torta_chocolate-fb.jpg') }}" alt="torta de chocolate">
                         <h3 class="nombre-producto2">Torta de chocolate</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
                         <span class="precio2"><b>Desde &nbsp</b> S/ 65.00</span>
                     </div>
                     <div class="items2" id="id-producto5">
-                        <img class="img-producto2" src="img/torta_brazilera-fb.jpg" alt="torta brazilera">
+                        <img class="img-producto2" src="{{ url_for('static', filename='img/torta_brazilera-fb.jpg') }}" alt="torta brazilera">
                         <h3 class="nombre-producto2">Torta brazilera</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
                         <span class="precio2"><b>Desde &nbsp</b> S/ 60.00</span>
                     </div>
                     <div class="items2" id="id-producto6">
-                        <img class="img-producto2" src="img/torta_fresa-fb.jpg" alt="torta de fresa">
+                        <img class="img-producto2" src="{{ url_for('static', filename='img/torta_fresa-fb.jpg') }}" alt="torta de fresa">
                         <h3 class="nombre-producto2">Torta de Fresa</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
                         <span class="precio2"><b>Desde &nbsp</b> S/ 70.00</span>
                     </div>
                     <div class="items2" id="id-producto7">
-                        <img class="img-producto2" src="img/torta_guanabana-fb.jpg" alt="torta de guanabana">
+                        <img class="img-producto2" src="{{ url_for('static', filename='img/torta_guanabana-fb.jpg') }}" alt="torta de guanabana">
                         <h3 class="nombre-producto2">Torta de Guanábana</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
                         <span class="precio2"><b>Desde &nbsp</b> S/ 58.00</span>
                     </div>
                     <div class="items2" id="id-producto8">
-                        <img class="img-producto2" src="img/torta_encanelado-fb.jpg" alt="torta_encanelado">
+                        <img class="img-producto2" src="{{ url_for('static', filename='img/torta_encanelado-fb.jpg') }}" alt="torta_encanelado">
                         <h3 class="nombre-producto2">Torta Encanelado</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
                         <span class="precio2"><b>Desde &nbsp</b> S/ 60.00</span>
                     </div>
                     <div class="items2" id="id-producto9">
-                        <img class="img-producto2" src="img/torta_lucuma-fb.jpg" alt="torta de lucuma">
+                        <img class="img-producto2" src="{{ url_for('static', filename='img/torta_lucuma-fb.jpg') }}" alt="torta de lucuma">
                         <h3 class="nombre-producto2">Torta de Lucuma</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
                         <span class="precio2"><b>Desde &nbsp</b> S/ 60.00</span>
                     </div>
                     <div class="items2" id="id-producto10">
-                        <img class="img-producto2" src="img/torta_durasno-fb.jpg" alt="Torta de durasno">
+                        <img class="img-producto2" src="{{ url_for('static', filename='img/torta_durasno-fb.jpg') }}" alt="Torta de durasno">
                         <h3 class="nombre-producto2">Torta de Durazno</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
                         <span class="precio2"><b>Desde &nbsp</b> S/ 65.00</span>
                     </div>
                     <div class="items2" id="id-producto11">
-                        <img class="img-producto2" src="img/torta_selva_fb.jpg" alt="torta_selva_negra">
+                        <img class="img-producto2" src="{{ url_for('static', filename='img/torta_selva_fb.jpg') }}" alt="torta_selva_negra">
                         <h3 class="nombre-producto2">Torta Selva Negra</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
                         <span class="precio2"><b>Desde &nbsp</b> S/ 64.00</span>
                     </div>
                     <div class="items2" id="id-producto12">
-                        <img class="img-producto2" src="img/torta_hawaiyana-fb.jpg" alt="torta hawaiyana">
+                        <img class="img-producto2" src="{{ url_for('static', filename='img/torta_hawaiyana-fb.jpg') }}" alt="torta hawaiyana">
                         <h3 class="nombre-producto2">Torta Hawaiana</h3>
-                        <a href="plantillas/detalle_compra.html"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
+                        <a href="{{ url_for('detalle_compra') }}"  class="btn-opcion"><b><i class="fa-sharp fa-solid fa-magnifying-glass"></i>  Ver Tamaños</b></a>
                         <span class="precio2"><b>Desde &nbsp</b> S/ 58.00</span>
                     </div>
+                    
 
                 </div>
                 <div class="slider__btn2 slider__btn--right2" id="btn-right2">&#62;</div>
@@ -208,9 +149,10 @@
             </div>
             <section class="container-slider2">
                 <div class="cajita">
-                    <img class="cajita-tajada" id="id-cajita" src="img/cajita_bicochuelos.jpg" alt="cajita de biscochuelos" >
-                    <img class="cajita-tajada" id="id-tajada" src="img/tajada_pastel.jpg" alt="tajada_pastel">
+                    <img class="cajita-tajada" id="id-cajita" src="{{ url_for('static', filename='img/cajita_bicochuelos.jpg') }}" alt="cajita de biscochuelos">
+                    <img class="cajita-tajada" id="id-tajada" src="{{ url_for('static', filename='img/tajada_pastel.jpg') }}" alt="tajada_pastel">
                 </div>
+                
             </section>
             <div class="fresco2">
                 <h1>- Relevantes -</h1>
@@ -472,4 +414,5 @@
         <script src="https://kit.fontawesome.com/b68941b8fb.js" crossorigin="anonymous"></script>
     </section>    
 </body>
-</html>
+{% endblock %}
+
