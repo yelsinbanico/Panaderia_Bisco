@@ -1,4 +1,4 @@
-/*para poner el slider  en movimiento ' destacadas' vista index*/
+/*para poner el slider  en movimiento ' relevantes' vista index*/
 const slider3 =document.querySelector("#news-cards3");
 let items3=document.querySelectorAll(".items3");
 let items3Last=items3[items3.length-1];

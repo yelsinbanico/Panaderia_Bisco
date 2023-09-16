@@ -159,26 +159,32 @@ hr {
 }
 .slider__btn{
     position: absolute;
-    width: 40px;
     height: 40px;
-    background:  #eed29a, 0.7;
+    border: none;
+    background-color: transparent;
+    color: #E38646;
     top: 50%;
     transform: translateY(-50%);
     font-size: 80px;
-    font-weight: bold;
     font-family: monospace;
+    font-weight: 100;
     text-align: center;
-    border-radius: 30%;
     cursor: pointer;
+    transition: all 0.5s ease;
+    z-index: 1;
 }
-.slider__btn:hover{
+.slider__btn i:hover{
    /* background:#fff;*/
+    color: #58b566;
+    transition: all 0.5s ease;
 }
 .slider__btn--left{
     left: 10px;
+    
 }
 .slider__btn--right{
     right: 10px;
+    
 }
 
 /*slider manual infinito infinito vista las mas pedidas */
@@ -212,7 +218,7 @@ hr {
 }
 
 .img-producto2{
-   width: 354px;
+   width: 358px;
     height: 250px;
     transition: 0.3s;
 
@@ -260,21 +266,24 @@ hr {
 }
 .slider__btn2{
     position: absolute;
-    margin-right: 10px;
+    margin-right: 38px;
     width: 30px;
     height: 30px;
-    background: #eed29a, 0.2;
+    background-color: transparent;
+    color: #E38646;
     top: 50%;
     transform: translateY(-450%);
     font-size: 70px;
-    font-weight: bold;
+    font-weight: 100;
     font-family: monospace;
     text-align: center;
-    border-radius: 10%;
     cursor: pointer;
+    transition: all 0.5s ease;
+    z-index: 1;
 }
-.slider__btn2:hover{
-
+.slider__btn2 i:hover{
+    color: #58b566;
+    transition: all 0.5s ease;
 }
 .slider__btn--left2{
     left: 10px;
@@ -313,7 +322,7 @@ hr {
     text-align: center;
 }
 .img-producto3{
-    width: 354px;
+    width: 358px;
      height: 250px;
      transition: 0.3s;
  
@@ -361,21 +370,24 @@ hr {
 }
 .slider__btn3{
     position: absolute;
-    margin-right: 10px;
+    margin-right: 38px;
     width: 30px;
     height: 30px;
-    background: #eed29a, 0.2;
+    background-color: transparent;
+    color: #E38646;
     top: 50%;
     transform: translateY(-450%);
     font-size: 70px;
-    font-weight: bold;
+    font-weight: 100;
     font-family: monospace;
     text-align: center;
-    border-radius: 10%;
     cursor: pointer;
+    transition: all 0.5s ease;
+    z-index: 1;
 }
-.slider__btn3:hover{
-
+.slider__btn3 i:hover{
+    color: #58b566;
+    transition: all 0.5s ease;
 }
 .slider__btn--left3{
     left: 10px;
@@ -783,9 +795,7 @@ hr {
 }
 
 @media(max-width:700px){
-    .menu-btn{
-        display: block;
-    }
+ 
     .nav-main ul.nav-menu{
         display: block;
         position: absolute;
@@ -834,6 +844,7 @@ hr {
     .news-cards{
         grid-template-columns: repeat(2,1fr);
     }
+
     .cards-banner-one .content,
     .cards-banner-two .content
     {
